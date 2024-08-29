@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("POSTGRES_PRISMA_URL")
+  directUrl         = env("POSTGRES_URL_NON_POOLING")
+  // shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model User {
+  uuid  String  @id @default(uuid())
+  email String?
+
+  publicKey    String
+  encryptedKey String?
+
+  journal Journal[]
+  tokens  AccessToken[]
+}
+
+model AccessToken {
+  value String @id @default(uuid())
+
+  userId  String
+  invalidated Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  member User @relation(fields: [userId], references: [uuid], onDelete: Cascade)
+}
+
+model Journal {
+  userId  String
+  order      Int
+  data       String
+  encryption String
+
+  owner User @relation(fields: [userId], references: [uuid], onDelete: Cascade)
+
+  @@id([userId, order])
+}
