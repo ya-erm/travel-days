@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from '../Icon.svelte';
   import ListGroupItem from './ListGroupItem.svelte';
 
   export let value: string;
@@ -11,7 +12,7 @@
     <span>{value}</span>
     <input type="radio" {checked} />
     {#if checked}
-      <span class="indicator" />
+      <Icon name="mdi:check" size={1.25} color="var(--active-color)" />
     {/if}
   </label>
 </ListGroupItem>
@@ -24,16 +25,9 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0 0.75rem;
   }
   input {
     display: none;
-  }
-  .indicator {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: var(--active-color);
-    mask: url('/icons/check.svg') no-repeat 50% 50%;
   }
 </style>

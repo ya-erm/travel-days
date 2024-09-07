@@ -11,7 +11,7 @@
   export let onClick: (() => void) | undefined = undefined;
 </script>
 
-<ListGroupItem {href} {onClick}>
+<ListGroupItem {href} {onClick} {disabled} {$$restProps}>
   <div class="container" class:disabled>
     <span class="title">{title}</span>
     <div class="value-container">
@@ -29,8 +29,8 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    padding: 0 10px;
-    gap: 10px;
+    padding: 0 0.75rem;
+    gap: 0.75rem;
     overflow: hidden;
   }
   .container.disabled {
@@ -44,14 +44,14 @@
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.25rem;
     overflow: hidden;
   }
   .value-text {
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
-    max-width: calc(100% - 25px);
+    max-width: calc(100% - 1.25rem);
     overflow: hidden;
   }
 </style>

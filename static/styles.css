@@ -42,6 +42,9 @@ body.dark-mode {
 
 a {
   color: var(--active-color);
+  &:focus-visible {
+    outline: 2px solid var(--active-color);
+  }
 }
 
 .hidden {
@@ -49,16 +52,27 @@ a {
 }
 
 .text-ellipsis,
-.text-ellipsis-all {
+.text-ellipsis-all,
+.text-ellipsis-block {
   text-align: left;
-  display: -webkit-box;
   text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
   overflow: hidden;
+}
+.text-ellipsis,
+.text-ellipsis-all {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .text-ellipsis-all {
   word-break: break-all;
+}
+.text-ellipsis-block {
+  display: block;
+}
+.no-wrap {
+  white-space: nowrap;
 }
 
 /* Position */

@@ -1,0 +1,134 @@
+[
+  {
+    "code": "FYG",
+    "name": "Fuyong Ferry Port",
+    "city_code": "SZX",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 22.543098,
+      "lon": 114.05787
+    }
+  },
+  {
+    "code": "ISH",
+    "name": "Ischia Airport",
+    "city_code": "ISH",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 40.733334,
+      "lon": 13.95
+    }
+  },
+  {
+    "code": "OZL",
+    "name": "Orzola Ferry Port",
+    "city_code": "OZL",
+    "country_code": "ES",
+    "time_zone": "Atlantic/Canary",
+    "coordinates": {
+      "lat": 29.223698,
+      "lon": -13.454244
+    }
+  },
+  {
+    "code": "RRO",
+    "name": "Sorrento",
+    "city_code": "RRO",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 40.61667,
+      "lon": 14.366667
+    }
+  },
+  {
+    "code": "XJH",
+    "name": "Hong Kong Harbour",
+    "city_code": "HKG",
+    "country_code": "HK",
+    "time_zone": "Asia/Hong_Kong",
+    "coordinates": {
+      "lat": 22.24786,
+      "lon": 114.203384
+    }
+  },
+  {
+    "code": "XZM",
+    "name": "Macau Ferry",
+    "city_code": "MFM",
+    "country_code": "MO",
+    "time_zone": "Asia/Macau",
+    "coordinates": {
+      "lat": 22.163845,
+      "lon": 113.55499
+    }
+  },
+  {
+    "code": "YFT",
+    "name": "Taipa Ferry Port",
+    "city_code": "YFT",
+    "country_code": "MO",
+    "time_zone": "Asia/Macau",
+    "coordinates": {
+      "lat": -18.178333,
+      "lon": 125.55417
+    }
+  },
+  {
+    "code": "ZGN",
+    "name": "Zhongshan Ferry Port",
+    "city_code": "ZGN",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 22.61321,
+      "lon": 108.1675
+    }
+  },
+  {
+    "code": "ZNA",
+    "name": "Nanaimo Harbour",
+    "city_code": "YCD",
+    "country_code": "CA",
+    "time_zone": "America/Vancouver",
+    "coordinates": {
+      "lat": 49.05293,
+      "lon": -123.87485
+    }
+  },
+  {
+    "code": "ZTI",
+    "name": "Humen Port",
+    "city_code": "ZTI",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 22.864874,
+      "lon": 113.583015
+    }
+  },
+  {
+    "code": "ZUI",
+    "name": "Jiuzhou Ferry Port",
+    "city_code": "ZUH",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 22.270716,
+      "lon": 113.57673
+    }
+  },
+  {
+    "code": "ZYK",
+    "name": "Shekou Ferry Terminal",
+    "city_code": "ZYK",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 22.468485,
+      "lon": 113.91365
+    }
+  }
+]

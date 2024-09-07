@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ListGroupItem from '$lib/ui/list/ListGroupItem.svelte';
+  import ListGroupItem from '$lib/ui/list-group/ListGroupItem.svelte';
   import { longPress, toShortTimezoneOffset } from '$lib/utils';
 
   export let timezone: {

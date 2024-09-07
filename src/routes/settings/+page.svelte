@@ -7,4 +7,6 @@
   useTitle($translate('settings.title'));
 </script>
 
-<Settings />
+<div class="p-1 flex-col gap-1">
+  <Settings />
+</div>

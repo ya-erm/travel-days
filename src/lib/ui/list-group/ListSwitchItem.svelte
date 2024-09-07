@@ -6,7 +6,7 @@
   export let title: string;
 </script>
 
-<ListGroupItem onClick={() => (checked = !checked)}>
+<ListGroupItem onClick={() => (checked = !checked)} role="switch" aria-checked={checked}>
   <div class="theme-switch">
     <input type="checkbox" bind:checked />
     <span>{title}</span>

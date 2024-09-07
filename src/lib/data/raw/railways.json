@@ -1,0 +1,2939 @@
+[
+  {
+    "code": "BAU",
+    "name": "Bauru",
+    "city_code": "BRI",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": -22.343056,
+      "lon": -49.0525
+    }
+  },
+  {
+    "code": "BNJ",
+    "name": "Bonn Hbf Railway Station",
+    "city_code": "CGN",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.940666,
+      "lon": 6.9599113
+    }
+  },
+  {
+    "code": "BQD",
+    "name": "Brindisi Railway Station",
+    "city_code": "BDS",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 40.636177,
+      "lon": 17.938992
+    }
+  },
+  {
+    "code": "BRF",
+    "name": "Bradford",
+    "city_code": "LBA",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 53.8,
+      "lon": -1.75
+    }
+  },
+  {
+    "code": "BSH",
+    "name": "Brighton",
+    "city_code": "BSH",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 50.816666,
+      "lon": -0.116667
+    }
+  },
+  {
+    "code": "CDZ",
+    "name": "Cadiz",
+    "city_code": "CDZ",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 36.533333,
+      "lon": -6.3
+    }
+  },
+  {
+    "code": "EEM",
+    "name": "Albacete Railway Station",
+    "city_code": "ABC",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 38.99765,
+      "lon": -1.8600701
+    }
+  },
+  {
+    "code": "EEP",
+    "name": "Pamplona Railway Station",
+    "city_code": "PNA",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 58.418888,
+      "lon": 24.472778
+    }
+  },
+  {
+    "code": "EER",
+    "name": "Reus Railway Station",
+    "city_code": "REU",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.15482,
+      "lon": 1.108676
+    }
+  },
+  {
+    "code": "EEU",
+    "name": "Leon Railway Station",
+    "city_code": "LEN",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 42.599876,
+      "lon": -5.571752
+    }
+  },
+  {
+    "code": "FIR",
+    "name": "Firenze C.M. Raiway Station",
+    "city_code": "FLR",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 43.768734,
+      "lon": 11.256902
+    }
+  },
+  {
+    "code": "FVS",
+    "name": "Finland Station",
+    "city_code": "LED",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 59.955555,
+      "lon": 30.356667
+    }
+  },
+  {
+    "code": "GEN",
+    "name": "Oslo - Gardermoen Airport",
+    "city_code": "GEN",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 37.38333,
+      "lon": -4.766667
+    }
+  },
+  {
+    "code": "HEC",
+    "name": "Helsinki Central Station",
+    "city_code": "HEL",
+    "country_code": "FI",
+    "time_zone": "Europe/Helsinki",
+    "coordinates": {
+      "lat": 60.171944,
+      "lon": 24.94139
+    }
+  },
+  {
+    "code": "HEV",
+    "name": "Huelva",
+    "city_code": "HEV",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 37.266666,
+      "lon": -6.95
+    }
+  },
+  {
+    "code": "IBT",
+    "name": "Bologna Central Railway Station",
+    "city_code": "BLQ",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 44.49419,
+      "lon": 11.3465185
+    }
+  },
+  {
+    "code": "IMR",
+    "name": "Rogoredo Railway Station",
+    "city_code": "MIL",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.46368,
+      "lon": 9.188171
+    }
+  },
+  {
+    "code": "INP",
+    "name": "Naples Central Railway Station",
+    "city_code": "NAP",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 40.840096,
+      "lon": 14.251636
+    }
+  },
+  {
+    "code": "IOB",
+    "name": "Innsbruck Railway Station",
+    "city_code": "INN",
+    "country_code": "AT",
+    "time_zone": "Europe/Vienna",
+    "coordinates": {
+      "lat": 47.265453,
+      "lon": 11.409907
+    }
+  },
+  {
+    "code": "IPR",
+    "name": "Porta Garibaldi Station",
+    "city_code": "MIL",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.46368,
+      "lon": 9.188171
+    }
+  },
+  {
+    "code": "IRR",
+    "name": "Ostiense Railway Station",
+    "city_code": "ROM",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 41.89052,
+      "lon": 12.494248
+    }
+  },
+  {
+    "code": "IRT",
+    "name": "Tiburtina Railway Station",
+    "city_code": "ROM",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 41.89052,
+      "lon": 12.494248
+    }
+  },
+  {
+    "code": "ISR",
+    "name": "Salerno Railway Station",
+    "city_code": "QSR",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 40.68056,
+      "lon": 14.75972
+    }
+  },
+  {
+    "code": "ITT",
+    "name": "Porta Susa Railway Station",
+    "city_code": "TRN",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 70.583336,
+      "lon": -21.666668
+    }
+  },
+  {
+    "code": "JQF",
+    "name": "Savelovsky Railway Station",
+    "city_code": "MOW",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 55.7943,
+      "lon": 37.5881
+    }
+  },
+  {
+    "code": "JQO",
+    "name": "Belorussky Railway Station",
+    "city_code": "MOW",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 55.755787,
+      "lon": 37.617634
+    }
+  },
+  {
+    "code": "KLT",
+    "name": "Kaiserslautern",
+    "city_code": "KLT",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 49.433334,
+      "lon": 7.75
+    }
+  },
+  {
+    "code": "KYN",
+    "name": "Milton Keynes",
+    "city_code": "KYN",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 52.03428,
+      "lon": -0.774107
+    }
+  },
+  {
+    "code": "LTZ",
+    "name": "Lamezia Terme Central Railway Station",
+    "city_code": "SUF",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 38.91,
+      "lon": 16.24
+    }
+  },
+  {
+    "code": "QDH",
+    "name": "Ashford International Railway Station",
+    "city_code": "QDH",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.1436,
+      "lon": 0.87448
+    }
+  },
+  {
+    "code": "QDU",
+    "name": "Station",
+    "city_code": "DUS",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.22494,
+      "lon": 6.7756524
+    }
+  },
+  {
+    "code": "QEW",
+    "name": "Leicester Railway Station",
+    "city_code": "QEW",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 52.632,
+      "lon": -1.124
+    }
+  },
+  {
+    "code": "QFV",
+    "name": "Bergen Railway Station",
+    "city_code": "BGO",
+    "country_code": "NO",
+    "time_zone": "Europe/Oslo",
+    "coordinates": {
+      "lat": 60.333332,
+      "lon": 5.333333
+    }
+  },
+  {
+    "code": "QFZ",
+    "name": "Saarbruecken Hbf Railway Station",
+    "city_code": "SCN",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 49.23485,
+      "lon": 6.9944015
+    }
+  },
+  {
+    "code": "QGN",
+    "name": "Tarragona/Camp Rail Station",
+    "city_code": "QGN",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.19218,
+      "lon": 1.274064
+    }
+  },
+  {
+    "code": "QGV",
+    "name": "Neu Isenburg",
+    "city_code": "FRA",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.05,
+      "lon": 8.683333
+    }
+  },
+  {
+    "code": "QJZ",
+    "name": "Nantes Railway Station",
+    "city_code": "NTE",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 47.218372,
+      "lon": -1.553621
+    }
+  },
+  {
+    "code": "QKL",
+    "name": "Koeln Hauptbahnhof",
+    "city_code": "CGN",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.9,
+      "lon": 7.183
+    }
+  },
+  {
+    "code": "QKU",
+    "name": "Messe/Deutz Rail Station",
+    "city_code": "CGN",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.940666,
+      "lon": 6.9599113
+    }
+  },
+  {
+    "code": "QLQ",
+    "name": "Lleida Railway Station",
+    "city_code": "ILD",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.61667,
+      "lon": 0.63333
+    }
+  },
+  {
+    "code": "QLV",
+    "name": "Leverkusen Mitte",
+    "city_code": "QLV",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.0333,
+      "lon": 6.9833
+    }
+  },
+  {
+    "code": "QPA",
+    "name": "Padova Central Railway Station",
+    "city_code": "QPA",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.4175,
+      "lon": 11.880278
+    }
+  },
+  {
+    "code": "QPP",
+    "name": "Berlin Hbf Railway Station",
+    "city_code": "BER",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 52.523407,
+      "lon": 13.4114
+    }
+  },
+  {
+    "code": "QQK",
+    "name": "Kings Cross Rail Station",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "QQM",
+    "name": "Piccadilly Railway Station",
+    "city_code": "MAN",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": -1,
+      "lon": -1
+    }
+  },
+  {
+    "code": "QQN",
+    "name": "New Street Rail Station",
+    "city_code": "BHX",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 52.48296,
+      "lon": -1.893592
+    }
+  },
+  {
+    "code": "QQP",
+    "name": "Paddington Railway Station",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": -1,
+      "lon": -1
+    }
+  },
+  {
+    "code": "QQS",
+    "name": "St Pancras International RailSt",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "QQU",
+    "name": "Euston Railway Station",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "QQW",
+    "name": "London-Waterloo",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "QQX",
+    "name": "Bath Spa Railway Station",
+    "city_code": "QQX",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.377815,
+      "lon": -2.3569782
+    }
+  },
+  {
+    "code": "QRH",
+    "name": "Rotterdam Central Railway Station",
+    "city_code": "RTM",
+    "country_code": "NL",
+    "time_zone": "Europe/Amsterdam",
+    "coordinates": {
+      "lat": 51.916668,
+      "lon": 4.5
+    }
+  },
+  {
+    "code": "QSG",
+    "name": "Sonderborg",
+    "city_code": "SGD",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 54.91381,
+      "lon": 9.792178
+    }
+  },
+  {
+    "code": "QTF",
+    "name": "Leipzig Bus Terminal",
+    "city_code": "LEJ",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.5278,
+      "lon": 12.822203
+    }
+  },
+  {
+    "code": "QWB",
+    "name": "Ostbahnhof Railway Station",
+    "city_code": "BER",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 52.523407,
+      "lon": 13.4114
+    }
+  },
+  {
+    "code": "QWC",
+    "name": "Zoo Railway Station",
+    "city_code": "BER",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 52.523407,
+      "lon": 13.4114
+    }
+  },
+  {
+    "code": "QXB",
+    "name": "Aix-en-Provence TGV Railway Station",
+    "city_code": "QXB",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 43.455,
+      "lon": 5.317222
+    }
+  },
+  {
+    "code": "QYI",
+    "name": "Hilversum Railway Station",
+    "city_code": "QYI",
+    "country_code": "NL",
+    "time_zone": "Europe/Amsterdam",
+    "coordinates": {
+      "lat": 52.226334,
+      "lon": 5.181235
+    }
+  },
+  {
+    "code": "QYU",
+    "name": "Gavle C Railway Station",
+    "city_code": "GVX",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.674618,
+      "lon": 17.14183
+    }
+  },
+  {
+    "code": "QYX",
+    "name": "Uppsala C Railway Station",
+    "city_code": "QYX",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 59.858612,
+      "lon": 17.64611
+    }
+  },
+  {
+    "code": "RCC",
+    "name": "Reggio di Calabria Central Railway Station",
+    "city_code": "REG",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 38.07,
+      "lon": 15.65
+    }
+  },
+  {
+    "code": "TPY",
+    "name": "Porta Nuova Railway Station",
+    "city_code": "TRN",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.07056,
+      "lon": 7.686619
+    }
+  },
+  {
+    "code": "XAD",
+    "name": "Churchill Railway Station",
+    "city_code": "YYQ",
+    "country_code": "CA",
+    "time_zone": "America/Winnipeg",
+    "coordinates": {
+      "lat": 58.755455,
+      "lon": -94.11247
+    }
+  },
+  {
+    "code": "XAX",
+    "name": "Dorval Railway Station",
+    "city_code": "YMQ",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 45.50889,
+      "lon": -73.55417
+    }
+  },
+  {
+    "code": "XDB",
+    "name": "Europe Railway Station",
+    "city_code": "LIL",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 50.62925,
+      "lon": 3.057256
+    }
+  },
+  {
+    "code": "XDD",
+    "name": "Gaspe Railway Station",
+    "city_code": "YGP",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 48.902946,
+      "lon": -64.47868
+    }
+  },
+  {
+    "code": "XDG",
+    "name": "Halifax Railway Station",
+    "city_code": "YHZ",
+    "country_code": "CA",
+    "time_zone": "America/Halifax",
+    "coordinates": {
+      "lat": 44.64888,
+      "lon": -63.575314
+    }
+  },
+  {
+    "code": "XDP",
+    "name": "Moncton Railway Station",
+    "city_code": "YQM",
+    "country_code": "CA",
+    "time_zone": "America/Moncton",
+    "coordinates": {
+      "lat": 46.115833,
+      "lon": -64.803055
+    }
+  },
+  {
+    "code": "XDQ",
+    "name": "London Railway Station",
+    "city_code": "YXU",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 42.987,
+      "lon": -81.251
+    }
+  },
+  {
+    "code": "XDS",
+    "name": "Ottawa Railway Station",
+    "city_code": "YOW",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 45.41157,
+      "lon": -75.6982
+    }
+  },
+  {
+    "code": "XDV",
+    "name": "Pr. George Railway",
+    "city_code": "YXS",
+    "country_code": "CA",
+    "time_zone": "America/Vancouver",
+    "coordinates": {
+      "lat": 53.91848,
+      "lon": -122.77658
+    }
+  },
+  {
+    "code": "XDW",
+    "name": "Prince Rupert Railway Station",
+    "city_code": "YPR",
+    "country_code": "CA",
+    "time_zone": "America/Vancouver",
+    "coordinates": {
+      "lat": 54.306145,
+      "lon": -130.31088
+    }
+  },
+  {
+    "code": "XDX",
+    "name": "Sarnia Railway Station",
+    "city_code": "YZR",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 42.9848,
+      "lon": -82.36059
+    }
+  },
+  {
+    "code": "XDY",
+    "name": "Sudbury Jct Railway",
+    "city_code": "YSB",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 46.63,
+      "lon": -80.8
+    }
+  },
+  {
+    "code": "XEA",
+    "name": "Vancouver Railway.",
+    "city_code": "YVR",
+    "country_code": "CA",
+    "time_zone": "America/Vancouver",
+    "coordinates": {
+      "lat": 49.261227,
+      "lon": -123.11393
+    }
+  },
+  {
+    "code": "XEC",
+    "name": "Windsor Railway Station",
+    "city_code": "YQG",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 42.28,
+      "lon": -82.96
+    }
+  },
+  {
+    "code": "XED",
+    "name": "Marne/Chessy Rail Station",
+    "city_code": "XED",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.8704,
+      "lon": 2.782799
+    }
+  },
+  {
+    "code": "XEF",
+    "name": "Winnipeg Railway Station",
+    "city_code": "YWG",
+    "country_code": "CA",
+    "time_zone": "America/Winnipeg",
+    "coordinates": {
+      "lat": 49.88608,
+      "lon": -97.15292
+    }
+  },
+  {
+    "code": "XEG",
+    "name": "Kingston Railway Station",
+    "city_code": "YGK",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 44.263565,
+      "lon": -76.50336
+    }
+  },
+  {
+    "code": "XEV",
+    "name": "Stockholm C Rail Station",
+    "city_code": "STO",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 59.332787,
+      "lon": 18.064487
+    }
+  },
+  {
+    "code": "XFA",
+    "name": "Lille Flanders RailwaySv",
+    "city_code": "LIL",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 50.62925,
+      "lon": 3.057256
+    }
+  },
+  {
+    "code": "XFF",
+    "name": "Calais-Frethun Rail Station",
+    "city_code": "CQF",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 50.95129,
+      "lon": 1.858686
+    }
+  },
+  {
+    "code": "XFJ",
+    "name": "Eskilstuna C Rail Station",
+    "city_code": "EKT",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 59.366467,
+      "lon": 16.508427
+    }
+  },
+  {
+    "code": "XFP",
+    "name": "Malmo C Railway Station",
+    "city_code": "MMA",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 55.61,
+      "lon": 13.004
+    }
+  },
+  {
+    "code": "XFR",
+    "name": "Malmo Syd Railway Station",
+    "city_code": "MMA",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 55.61,
+      "lon": 13.004
+    }
+  },
+  {
+    "code": "XFY",
+    "name": "Sainte-Foy Railway",
+    "city_code": "YQB",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 46.803284,
+      "lon": -71.2428
+    }
+  },
+  {
+    "code": "XFZ",
+    "name": "Charny",
+    "city_code": "YQB",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 46.716667,
+      "lon": -71.25
+    }
+  },
+  {
+    "code": "XGC",
+    "name": "Lund C Railway Station",
+    "city_code": "XGC",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 55.705276,
+      "lon": 13.187222
+    }
+  },
+  {
+    "code": "XHJ",
+    "name": "Aachen Hbf Railway Station",
+    "city_code": "AAH",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.77544,
+      "lon": 6.08151
+    }
+  },
+  {
+    "code": "XHK",
+    "name": "Valence TGV Railway Station",
+    "city_code": "VAF",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 44.93339,
+      "lon": 4.89236
+    }
+  },
+  {
+    "code": "XHN",
+    "name": "Guillemins, Raiway Stn",
+    "city_code": "LGG",
+    "country_code": "BE",
+    "time_zone": "Europe/Brussels",
+    "coordinates": {
+      "lat": 50.63333,
+      "lon": 5.56666
+    }
+  },
+  {
+    "code": "XHP",
+    "name": "Gare de l'Est Rail Station",
+    "city_code": "PAR",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.856613,
+      "lon": 2.352222
+    }
+  },
+  {
+    "code": "XHW",
+    "name": "Alice Springs Railway",
+    "city_code": "ASP",
+    "country_code": "AU",
+    "time_zone": "Australia/Darwin",
+    "coordinates": {
+      "lat": -23.70021,
+      "lon": 133.88062
+    }
+  },
+  {
+    "code": "XHX",
+    "name": "Adelaide Keswick Railway",
+    "city_code": "ADL",
+    "country_code": "AU",
+    "time_zone": "Australia/Adelaide",
+    "coordinates": {
+      "lat": -34.92862,
+      "lon": 138.59996
+    }
+  },
+  {
+    "code": "XIK",
+    "name": "Milan Centrale Railway Station",
+    "city_code": "MIL",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.46368,
+      "lon": 9.188171
+    }
+  },
+  {
+    "code": "XIR",
+    "name": "Dresden Hbf Railway Station",
+    "city_code": "DRS",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.13,
+      "lon": 13.77
+    }
+  },
+  {
+    "code": "XIT",
+    "name": "Leipzig Hbf Rail Station",
+    "city_code": "LEJ",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.43,
+      "lon": 12.24
+    }
+  },
+  {
+    "code": "XIU",
+    "name": "Erfurt Hbf Railway Station",
+    "city_code": "ERF",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.973736,
+      "lon": 11.022435
+    }
+  },
+  {
+    "code": "XIV",
+    "name": "Campo Grande Rail Station",
+    "city_code": "VLL",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.652943,
+      "lon": -4.728381
+    }
+  },
+  {
+    "code": "XIX",
+    "name": "Porta Nuova Railway",
+    "city_code": "VRN",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.438328,
+      "lon": 10.991762
+    }
+  },
+  {
+    "code": "XIZ",
+    "name": "Champagne-Ardenne TGV",
+    "city_code": "RHE",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 49.258327,
+      "lon": 4.031696
+    }
+  },
+  {
+    "code": "XJG",
+    "name": "Darwin Railway",
+    "city_code": "DRW",
+    "country_code": "AU",
+    "time_zone": "Australia/Darwin",
+    "coordinates": {
+      "lat": -12.46282,
+      "lon": 130.84177
+    }
+  },
+  {
+    "code": "XJI",
+    "name": "Ciudad Real Railway Station",
+    "city_code": "CQM",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 38.986095,
+      "lon": -3.9272628
+    }
+  },
+  {
+    "code": "XJP",
+    "name": "Pardubice Main Railway Station",
+    "city_code": "PED",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 50.037827,
+      "lon": 15.780833
+    }
+  },
+  {
+    "code": "XJT",
+    "name": "Tours Railway Station",
+    "city_code": "TUF",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 47.394142,
+      "lon": 0.68484
+    }
+  },
+  {
+    "code": "XJV",
+    "name": "Ostrava Main Railway Station",
+    "city_code": "OSR",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 49.84127,
+      "lon": 18.290249
+    }
+  },
+  {
+    "code": "XJY",
+    "name": "Massy TGV Rail Station",
+    "city_code": "PAR",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.856613,
+      "lon": 2.352222
+    }
+  },
+  {
+    "code": "XKL",
+    "name": "Sentral Railway Station",
+    "city_code": "KUL",
+    "country_code": "MY",
+    "time_zone": "Asia/Kuala_Lumpur",
+    "coordinates": {
+      "lat": 3.139003,
+      "lon": 101.68685
+    }
+  },
+  {
+    "code": "XKR",
+    "name": "Kristiansand Railway Station",
+    "city_code": "KSU",
+    "country_code": "NO",
+    "time_zone": "Europe/Oslo",
+    "coordinates": {
+      "lat": 58.150936,
+      "lon": 7.9961925
+    }
+  },
+  {
+    "code": "XLJ",
+    "name": "Quebec Stn. Railway",
+    "city_code": "YQB",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 46.803284,
+      "lon": -71.2428
+    }
+  },
+  {
+    "code": "XLK",
+    "name": "Levis Railway Station",
+    "city_code": "YQB",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 46.803284,
+      "lon": -71.2428
+    }
+  },
+  {
+    "code": "XLM",
+    "name": "St Lambert Railway",
+    "city_code": "YMQ",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 45.50889,
+      "lon": -73.55417
+    }
+  },
+  {
+    "code": "XLQ",
+    "name": "Guildwood Railway Station",
+    "city_code": "YTO",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 43.653522,
+      "lon": -79.3839
+    }
+  },
+  {
+    "code": "XNC",
+    "name": "Cadorna Railway Station",
+    "city_code": "MIL",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.46368,
+      "lon": 9.188171
+    }
+  },
+  {
+    "code": "XNE",
+    "name": "Newport Railway Station",
+    "city_code": "XNE",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.5896,
+      "lon": -2.999
+    }
+  },
+  {
+    "code": "XNM",
+    "name": "Nottingham Railway Station",
+    "city_code": "NQT",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 52.955116,
+      "lon": -1.1491718
+    }
+  },
+  {
+    "code": "XOC",
+    "name": "Atocha Railway St.",
+    "city_code": "MAD",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 40.41669,
+      "lon": -3.7003455
+    }
+  },
+  {
+    "code": "XOF",
+    "name": "Stratford International Rail Station",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "XOJ",
+    "name": "Cordoba Central Railway Station",
+    "city_code": "ODB",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 37.884727,
+      "lon": -4.779152
+    }
+  },
+  {
+    "code": "XOP",
+    "name": "Poitiers Railway Station",
+    "city_code": "PIS",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 46.580223,
+      "lon": 0.340375
+    }
+  },
+  {
+    "code": "XOU",
+    "name": "Segovia Guiomar Railway Station",
+    "city_code": "XOU",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 40.910576,
+      "lon": -4.094564
+    }
+  },
+  {
+    "code": "XPG",
+    "name": "Gare du Nord Railway",
+    "city_code": "PAR",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.856613,
+      "lon": 2.352222
+    }
+  },
+  {
+    "code": "XPJ",
+    "name": "Montpellier Railway",
+    "city_code": "MPL",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 43.610767,
+      "lon": 3.876716
+    }
+  },
+  {
+    "code": "XQA",
+    "name": "Santa Justa Railway Station",
+    "city_code": "SVQ",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 37.38264,
+      "lon": -5.996295
+    }
+  },
+  {
+    "code": "XQE",
+    "name": "Ebbsfleet International Rail Station",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "XRE",
+    "name": "Reading railway station",
+    "city_code": "XRE",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.459,
+      "lon": -0.9722
+    }
+  },
+  {
+    "code": "XRF",
+    "name": "Marseille Railway",
+    "city_code": "MRS",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 43.296482,
+      "lon": 5.36978
+    }
+  },
+  {
+    "code": "XRJ",
+    "name": "Termini Railway.",
+    "city_code": "ROM",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 41.89052,
+      "lon": 12.494248
+    }
+  },
+  {
+    "code": "XRK",
+    "name": "Paveletskiy Railway Station",
+    "city_code": "MOW",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 55.755787,
+      "lon": 37.617634
+    }
+  },
+  {
+    "code": "XSH",
+    "name": "St-Pierre-Corps RailSt",
+    "city_code": "TUF",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 47.394142,
+      "lon": 0.68484
+    }
+  },
+  {
+    "code": "XTI",
+    "name": "Chamartin Railway St.",
+    "city_code": "MAD",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 40.41669,
+      "lon": -3.7003455
+    }
+  },
+  {
+    "code": "XTJ",
+    "name": "Toledo Railway Station",
+    "city_code": "XTJ",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 39.8624,
+      "lon": -4.01125
+    }
+  },
+  {
+    "code": "XUA",
+    "name": "Huesca Railway Station",
+    "city_code": "HSK",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 42.140102,
+      "lon": -0.408898
+    }
+  },
+  {
+    "code": "XVQ",
+    "name": "Santa Lucia Railway",
+    "city_code": "VCE",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.434338,
+      "lon": 12.338784
+    }
+  },
+  {
+    "code": "XVU",
+    "name": "Durham Railway Station",
+    "city_code": "MME",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 54.51,
+      "lon": -1.43
+    }
+  },
+  {
+    "code": "XVY",
+    "name": "Mestre Railway.",
+    "city_code": "VCE",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.434338,
+      "lon": 12.338784
+    }
+  },
+  {
+    "code": "XWC",
+    "name": "Vienna Central Station",
+    "city_code": "VIE",
+    "country_code": "AT",
+    "time_zone": "Europe/Vienna",
+    "coordinates": {
+      "lat": 48.208176,
+      "lon": 16.37382
+    }
+  },
+  {
+    "code": "XWF",
+    "name": "Falun C Railway Station",
+    "city_code": "BLE",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.485603,
+      "lon": 15.436301
+    }
+  },
+  {
+    "code": "XWG",
+    "name": "Strasbourg Railway Station",
+    "city_code": "SXB",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.58315,
+      "lon": 7.747882
+    }
+  },
+  {
+    "code": "XWK",
+    "name": "Karlskrona RailwaySvc.",
+    "city_code": "RNB",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 56.27,
+      "lon": 15.27
+    }
+  },
+  {
+    "code": "XWL",
+    "name": "Goteborg C Railway Station",
+    "city_code": "GOT",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 57.696995,
+      "lon": 11.9865
+    }
+  },
+  {
+    "code": "XWP",
+    "name": "Hassleholm",
+    "city_code": "XWP",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 56.16667,
+      "lon": 13.76667
+    }
+  },
+  {
+    "code": "XWR",
+    "name": "Orebro C Railway Station",
+    "city_code": "ORB",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 59.273754,
+      "lon": 15.20754
+    }
+  },
+  {
+    "code": "XWS",
+    "name": "Swindon Railway Station",
+    "city_code": "XWS",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.5656,
+      "lon": -1.7854
+    }
+  },
+  {
+    "code": "XWT",
+    "name": "Mitte CAT Rail Station",
+    "city_code": "VIE",
+    "country_code": "AT",
+    "time_zone": "Europe/Vienna",
+    "coordinates": {
+      "lat": 48.208176,
+      "lon": 16.37382
+    }
+  },
+  {
+    "code": "XWW",
+    "name": "Westbahnhof Railway",
+    "city_code": "VIE",
+    "country_code": "AT",
+    "time_zone": "Europe/Vienna",
+    "coordinates": {
+      "lat": 48.208176,
+      "lon": 16.37382
+    }
+  },
+  {
+    "code": "XXJ",
+    "name": "Deli Railway Station",
+    "city_code": "BUD",
+    "country_code": "HU",
+    "time_zone": "Europe/Budapest",
+    "coordinates": {
+      "lat": 47.498405,
+      "lon": 19.040758
+    }
+  },
+  {
+    "code": "XXO",
+    "name": "Leksand Railway Station",
+    "city_code": "XXO",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.740074,
+      "lon": 15.003328
+    }
+  },
+  {
+    "code": "XXQ",
+    "name": "Keleti Railway Station",
+    "city_code": "BUD",
+    "country_code": "HU",
+    "time_zone": "Europe/Budapest",
+    "coordinates": {
+      "lat": 47.498405,
+      "lon": 19.040758
+    }
+  },
+  {
+    "code": "XXU",
+    "name": "Hedemora",
+    "city_code": "XXU",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.27694,
+      "lon": 15.98722
+    }
+  },
+  {
+    "code": "XXY",
+    "name": "Ronneby Railway Station",
+    "city_code": "RNB",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 56.27,
+      "lon": 15.27
+    }
+  },
+  {
+    "code": "XXZ",
+    "name": "Sundsvall C Rail Station",
+    "city_code": "SDL",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 62.390835,
+      "lon": 17.306915
+    }
+  },
+  {
+    "code": "XYB",
+    "name": "Borlange Railway",
+    "city_code": "BLE",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.485603,
+      "lon": 15.436301
+    }
+  },
+  {
+    "code": "XYD",
+    "name": "Lyon Part-Dieu",
+    "city_code": "LYS",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 46.24,
+      "lon": 5.15
+    }
+  },
+  {
+    "code": "XYG",
+    "name": "Prague Main Railway Station",
+    "city_code": "PRG",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 50.08781,
+      "lon": 14.42046
+    }
+  },
+  {
+    "code": "XYH",
+    "name": "Helsingborg Railway",
+    "city_code": "AGH",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 56.2432,
+      "lon": 12.861509
+    }
+  },
+  {
+    "code": "XYJ",
+    "name": "Holesovice Railway Station",
+    "city_code": "PRG",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 50.08781,
+      "lon": 14.42046
+    }
+  },
+  {
+    "code": "XYK",
+    "name": "Norrkoping C Rail Station",
+    "city_code": "NRK",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 58.5947,
+      "lon": 16.183607
+    }
+  },
+  {
+    "code": "XYL",
+    "name": "Lyon Perrache RailwaySvc",
+    "city_code": "LYS",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 45.76404,
+      "lon": 4.835659
+    }
+  },
+  {
+    "code": "XYP",
+    "name": "Avesta Krylbo",
+    "city_code": "XYP",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.14444,
+      "lon": 16.1675
+    }
+  },
+  {
+    "code": "XYQ",
+    "name": "Angelholm Railway",
+    "city_code": "AGH",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 56.2432,
+      "lon": 12.861509
+    }
+  },
+  {
+    "code": "XYX",
+    "name": "Sala",
+    "city_code": "XYX",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 59.92504,
+      "lon": 16.606123
+    }
+  },
+  {
+    "code": "XYZ",
+    "name": "Harnosand Railway Station",
+    "city_code": "SDL",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 62.390835,
+      "lon": 17.306915
+    }
+  },
+  {
+    "code": "XZI",
+    "name": "Lorraine TGV Rail Station",
+    "city_code": "ETZ",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 49.119667,
+      "lon": 6.176905
+    }
+  },
+  {
+    "code": "XZL",
+    "name": "Edmonton Railway Station",
+    "city_code": "YEA",
+    "country_code": "CA",
+    "time_zone": "America/Edmonton",
+    "coordinates": {
+      "lat": 53.548,
+      "lon": -113.49
+    }
+  },
+  {
+    "code": "XZN",
+    "name": "Avignon Railway",
+    "city_code": "AVN",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 43.949318,
+      "lon": 4.805528
+    }
+  },
+  {
+    "code": "XZO",
+    "name": "Oslo S Railway Station",
+    "city_code": "OSL",
+    "country_code": "NO",
+    "time_zone": "Europe/Oslo",
+    "coordinates": {
+      "lat": 59.913868,
+      "lon": 10.752245
+    }
+  },
+  {
+    "code": "XZT",
+    "name": "Trondheim S Rail Station",
+    "city_code": "TRD",
+    "country_code": "NO",
+    "time_zone": "Europe/Oslo",
+    "coordinates": {
+      "lat": 63.430515,
+      "lon": 10.395053
+    }
+  },
+  {
+    "code": "XZV",
+    "name": "Toulon Railway Station",
+    "city_code": "TLN",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 43.12054,
+      "lon": 6.128639
+    }
+  },
+  {
+    "code": "XZZ",
+    "name": "Delicias Railway St.",
+    "city_code": "ZAZ",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.65041,
+      "lon": -0.904891
+    }
+  },
+  {
+    "code": "YBZ",
+    "name": "Toronto Downtown",
+    "city_code": "YTO",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 43.653522,
+      "lon": -79.3839
+    }
+  },
+  {
+    "code": "YJB",
+    "name": "Sants Railway Station",
+    "city_code": "BCN",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.390205,
+      "lon": 2.154007
+    }
+  },
+  {
+    "code": "YJC",
+    "name": "A Coruna Railway Station",
+    "city_code": "LCG",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 43.370872,
+      "lon": -8.395835
+    }
+  },
+  {
+    "code": "YJD",
+    "name": "Franca Railway Station",
+    "city_code": "BCN",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.390205,
+      "lon": 2.154007
+    }
+  },
+  {
+    "code": "YJE",
+    "name": "Alicante Railway Station",
+    "city_code": "ALC",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 38.34521,
+      "lon": -0.4809945
+    }
+  },
+  {
+    "code": "YJG",
+    "name": "Granada Railway Station",
+    "city_code": "GRX",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 37.176487,
+      "lon": -3.597929
+    }
+  },
+  {
+    "code": "YJH",
+    "name": "San Sebastian Railway Station",
+    "city_code": "EAS",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 43.320812,
+      "lon": -1.9844474
+    }
+  },
+  {
+    "code": "YJI",
+    "name": "Abando Railway Station",
+    "city_code": "BIO",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": -36.516666,
+      "lon": 148.61667
+    }
+  },
+  {
+    "code": "YJL",
+    "name": "Santander Railway Station",
+    "city_code": "SDR",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": -20.583332,
+      "lon": 141.7
+    }
+  },
+  {
+    "code": "YJM",
+    "name": "Malaga Railway Station",
+    "city_code": "AGP",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 36.71965,
+      "lon": -4.4200163
+    }
+  },
+  {
+    "code": "YJR",
+    "name": "Vigo Railway Station",
+    "city_code": "VGO",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 42.231358,
+      "lon": -8.712447
+    }
+  },
+  {
+    "code": "YJV",
+    "name": "Valencia Railway Station",
+    "city_code": "VLC",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 39.490734,
+      "lon": -0.4558824
+    }
+  },
+  {
+    "code": "YJW",
+    "name": "Jerez Railway Station",
+    "city_code": "XRY",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 36.68656,
+      "lon": -6.1371727
+    }
+  },
+  {
+    "code": "YMY",
+    "name": "Downtown Railway Station",
+    "city_code": "YMQ",
+    "country_code": "CA",
+    "time_zone": "America/Montreal",
+    "coordinates": {
+      "lat": 45.50889,
+      "lon": -73.55417
+    }
+  },
+  {
+    "code": "ZAQ",
+    "name": "Nuremberg Hbf Railway Station",
+    "city_code": "NUE",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 41.56166,
+      "lon": 46.664787
+    }
+  },
+  {
+    "code": "ZBA",
+    "name": "Basel Bad Railway Station",
+    "city_code": "EAP",
+    "country_code": "CH",
+    "time_zone": "Europe/Zurich",
+    "coordinates": {
+      "lat": 40.078537,
+      "lon": 116.5871
+    }
+  },
+  {
+    "code": "ZBB",
+    "name": "Esbjerg Railway Station",
+    "city_code": "EBJ",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 55.476467,
+      "lon": 8.459405
+    }
+  },
+  {
+    "code": "ZBP",
+    "name": "Baltimore Railway",
+    "city_code": "BWI",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 39.2909,
+      "lon": -76.6108
+    }
+  },
+  {
+    "code": "ZCC",
+    "name": "Baden-Baden Railway Station",
+    "city_code": "FKB",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 49.008083,
+      "lon": 8.403756
+    }
+  },
+  {
+    "code": "ZDH",
+    "name": "Basel SBB station",
+    "city_code": "EAP",
+    "country_code": "CH",
+    "time_zone": "Europe/Zurich",
+    "coordinates": {
+      "lat": 47.3251,
+      "lon": 7.3523
+    }
+  },
+  {
+    "code": "ZDJ",
+    "name": "Bern Railway Station",
+    "city_code": "BRN",
+    "country_code": "CH",
+    "time_zone": "Europe/Zurich",
+    "coordinates": {
+      "lat": 46.94792,
+      "lon": 7.4446087
+    }
+  },
+  {
+    "code": "ZDU",
+    "name": "ScotRailway",
+    "city_code": "DND",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 56.46143,
+      "lon": -2.9681108
+    }
+  },
+  {
+    "code": "ZEP",
+    "name": "Victoria Railway",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "ZFJ",
+    "name": "Rennes",
+    "city_code": "RNS",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.113476,
+      "lon": -1.675708
+    }
+  },
+  {
+    "code": "ZFQ",
+    "name": "Gare de Bordeaux",
+    "city_code": "BOD",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 44.837788,
+      "lon": -0.57918
+    }
+  },
+  {
+    "code": "ZFT",
+    "name": "Fort Lauderdale Railway Station",
+    "city_code": "FLL",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 26.122309,
+      "lon": -80.14338
+    }
+  },
+  {
+    "code": "ZFV",
+    "name": "Philadelphia Railway Station",
+    "city_code": "PHL",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": -1,
+      "lon": -1
+    }
+  },
+  {
+    "code": "ZFZ",
+    "name": "Buffalo Depew Rr",
+    "city_code": "BUF",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 42.886448,
+      "lon": -78.87837
+    }
+  },
+  {
+    "code": "ZGG",
+    "name": "Glasgow Central Railway Station",
+    "city_code": "GLA",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 23.387861,
+      "lon": 113.29734
+    }
+  },
+  {
+    "code": "ZGH",
+    "name": "Copenhagen H Rail Station",
+    "city_code": "CPH",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 28.193336,
+      "lon": 113.21459
+    }
+  },
+  {
+    "code": "ZGJ",
+    "name": "Brugge Railway Station",
+    "city_code": "OST",
+    "country_code": "BE",
+    "time_zone": "Europe/Brussels",
+    "coordinates": {
+      "lat": 51.216667,
+      "lon": 2.9
+    }
+  },
+  {
+    "code": "ZHC",
+    "name": "N Philadelphia RailwaySt",
+    "city_code": "PHL",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 34.52752,
+      "lon": 113.84024
+    }
+  },
+  {
+    "code": "ZHT",
+    "name": "Geneva Railway Station",
+    "city_code": "GVA",
+    "country_code": "CH",
+    "time_zone": "Europe/Zurich",
+    "coordinates": {
+      "lat": 46.19839,
+      "lon": 6.1422963
+    }
+  },
+  {
+    "code": "ZHZ",
+    "name": "Halle Railway",
+    "city_code": "LEJ",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.43,
+      "lon": 12.24
+    }
+  },
+  {
+    "code": "ZIF",
+    "name": "Fallowfield Railway",
+    "city_code": "YOW",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 45.41157,
+      "lon": -75.6982
+    }
+  },
+  {
+    "code": "ZIV",
+    "name": "ScotRailway",
+    "city_code": "INV",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 57.476696,
+      "lon": -4.2314534
+    }
+  },
+  {
+    "code": "ZJH",
+    "name": "Aarhus H Railway Station",
+    "city_code": "AAR",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 19.941612,
+      "lon": 110.45717
+    }
+  },
+  {
+    "code": "ZKD",
+    "name": "Moscow Leningradsky Railway Station",
+    "city_code": "MOW",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 55.755787,
+      "lon": 37.617634
+    }
+  },
+  {
+    "code": "ZLK",
+    "name": "St Petersburg Moskovsky Railway Station",
+    "city_code": "LED",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 59.939037,
+      "lon": 30.315784
+    }
+  },
+  {
+    "code": "ZLN",
+    "name": "Le Mans Railway Station",
+    "city_code": "LME",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.00611,
+      "lon": 0.199556
+    }
+  },
+  {
+    "code": "ZLP",
+    "name": "HB Railway Station",
+    "city_code": "ZRH",
+    "country_code": "CH",
+    "time_zone": "Europe/Zurich",
+    "coordinates": {
+      "lat": 47.367348,
+      "lon": 8.550002
+    }
+  },
+  {
+    "code": "ZLQ",
+    "name": "Oerlikon Railway Station",
+    "city_code": "ZRH",
+    "country_code": "CH",
+    "time_zone": "Europe/Zurich",
+    "coordinates": {
+      "lat": 47.367348,
+      "lon": 8.550002
+    }
+  },
+  {
+    "code": "ZLS",
+    "name": "Liverpool St Rail Station",
+    "city_code": "LON",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 51.51,
+      "lon": 0.06
+    }
+  },
+  {
+    "code": "ZLY",
+    "name": "Albany Railway Station",
+    "city_code": "ALB",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 32.8399,
+      "lon": 97.0379
+    }
+  },
+  {
+    "code": "ZMB",
+    "name": "Hamburg Hbf Railway Station",
+    "city_code": "HAM",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 53.553814,
+      "lon": 9.991586
+    }
+  },
+  {
+    "code": "ZMI",
+    "name": "Mergellina Railway",
+    "city_code": "NAP",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 40.840096,
+      "lon": 14.251636
+    }
+  },
+  {
+    "code": "ZML",
+    "name": "Milwaukee General Mitchell",
+    "city_code": "MKE",
+    "country_code": "US",
+    "time_zone": "America/Chicago",
+    "coordinates": {
+      "lat": 43.038795,
+      "lon": -87.90653
+    }
+  },
+  {
+    "code": "ZMS",
+    "name": "S.M. Novella Rail.Svc",
+    "city_code": "FLR",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.13128,
+      "lon": 110.17072
+    }
+  },
+  {
+    "code": "ZMU",
+    "name": "Munich Hbf Railway Station",
+    "city_code": "MUC",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 47.85275,
+      "lon": 106.76327
+    }
+  },
+  {
+    "code": "ZPE",
+    "name": "Osnabrueck Hbf Rail Station",
+    "city_code": "FMO",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 52.09207,
+      "lon": 7.6105747
+    }
+  },
+  {
+    "code": "ZRA",
+    "name": "Atlantic City Railway Station",
+    "city_code": "AIY",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 39.3643,
+      "lon": -74.4229
+    }
+  },
+  {
+    "code": "ZRB",
+    "name": "Frankfurt Hbf Railway Station",
+    "city_code": "FRA",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 50.11361,
+      "lon": 8.67972
+    }
+  },
+  {
+    "code": "ZRD",
+    "name": "Richmond VA Railway",
+    "city_code": "RIC",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 37.54298,
+      "lon": -77.46909
+    }
+  },
+  {
+    "code": "ZRL",
+    "name": "Lancaster Railway",
+    "city_code": "LNS",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 40.037876,
+      "lon": -76.30551
+    }
+  },
+  {
+    "code": "ZRU",
+    "name": "Boston RT128 Railway",
+    "city_code": "BOS",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 42.35843,
+      "lon": -71.05978
+    }
+  },
+  {
+    "code": "ZRV",
+    "name": "Providence Railway",
+    "city_code": "PVD",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 41.82399,
+      "lon": -71.412834
+    }
+  },
+  {
+    "code": "ZRZ",
+    "name": "New Carrolton RR",
+    "city_code": "WAS",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 38.89511,
+      "lon": -77.03637
+    }
+  },
+  {
+    "code": "ZSB",
+    "name": "Salzburg Hbf Railway Station",
+    "city_code": "SZG",
+    "country_code": "AT",
+    "time_zone": "Europe/Vienna",
+    "coordinates": {
+      "lat": 47.80949,
+      "lon": 13.05501
+    }
+  },
+  {
+    "code": "ZSV",
+    "name": "St Louis Railway Station",
+    "city_code": "STL",
+    "country_code": "US",
+    "time_zone": "America/Chicago",
+    "coordinates": {
+      "lat": 38.627003,
+      "lon": -90.1994
+    }
+  },
+  {
+    "code": "ZTE",
+    "name": "Rochester NY Railway",
+    "city_code": "ROC",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 43.161,
+      "lon": -77.611
+    }
+  },
+  {
+    "code": "ZTF",
+    "name": "Stamford Railway Station",
+    "city_code": "ZTF",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 42.4073,
+      "lon": -74.6143
+    }
+  },
+  {
+    "code": "ZTG",
+    "name": "Aalborg Railway Station",
+    "city_code": "AAL",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 57.028812,
+      "lon": 9.917771
+    }
+  },
+  {
+    "code": "ZTN",
+    "name": "Trenton RailwaySTN",
+    "city_code": "PHL",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 39.952335,
+      "lon": -75.16379
+    }
+  },
+  {
+    "code": "ZTO",
+    "name": "Boston South Railway",
+    "city_code": "BOS",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 42.35843,
+      "lon": -71.05978
+    }
+  },
+  {
+    "code": "ZTY",
+    "name": "Boston BKBAY Railway",
+    "city_code": "BOS",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 42.35843,
+      "lon": -71.05978
+    }
+  },
+  {
+    "code": "ZUG",
+    "name": "Harrisburg Railway",
+    "city_code": "HAR",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 40.26,
+      "lon": -76.86
+    }
+  },
+  {
+    "code": "ZUN",
+    "name": "Chicago Union Railway Station",
+    "city_code": "CHI",
+    "country_code": "US",
+    "time_zone": "America/Chicago",
+    "coordinates": {
+      "lat": 41.878113,
+      "lon": -87.6298
+    }
+  },
+  {
+    "code": "ZVE",
+    "name": "New Haven Railway",
+    "city_code": "HVN",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 41.30815,
+      "lon": -72.928154
+    }
+  },
+  {
+    "code": "ZVM",
+    "name": "Messe-BF Railway Servi",
+    "city_code": "HAJ",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 52.372066,
+      "lon": 9.735686
+    }
+  },
+  {
+    "code": "ZVR",
+    "name": "Hanover Railway",
+    "city_code": "HAJ",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 52.372066,
+      "lon": 9.735686
+    }
+  },
+  {
+    "code": "ZWB",
+    "name": "Williamsburg Railway",
+    "city_code": "PHF",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 36.97876,
+      "lon": -76.428
+    }
+  },
+  {
+    "code": "ZWC",
+    "name": "Stavanger Railway Station",
+    "city_code": "SVG",
+    "country_code": "NO",
+    "time_zone": "Europe/Oslo",
+    "coordinates": {
+      "lat": 38.13333,
+      "lon": 85.53333
+    }
+  },
+  {
+    "code": "ZWE",
+    "name": "Antwerp Central Railway Station",
+    "city_code": "ANR",
+    "country_code": "BE",
+    "time_zone": "Europe/Brussels",
+    "coordinates": {
+      "lat": 49.21516,
+      "lon": 7.399708
+    }
+  },
+  {
+    "code": "ZWH",
+    "name": "Windhoek Railway Station",
+    "city_code": "WDH",
+    "country_code": "NA",
+    "time_zone": "Africa/Windhoek",
+    "coordinates": {
+      "lat": -22.558905,
+      "lon": 17.082481
+    }
+  },
+  {
+    "code": "ZWI",
+    "name": "Wilmington Railway",
+    "city_code": "ILG",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 50.730556,
+      "lon": 12.544444
+    }
+  },
+  {
+    "code": "ZWP",
+    "name": "West Palm Beach Railway Station",
+    "city_code": "PBI",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 26.715342,
+      "lon": -80.053375
+    }
+  },
+  {
+    "code": "ZWS",
+    "name": "Stuttgart Hauptbahnhof",
+    "city_code": "STR",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 9.181667,
+      "lon": 48.78361
+    }
+  },
+  {
+    "code": "ZWU",
+    "name": "Washington Union Railway Station",
+    "city_code": "WAS",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 38.89511,
+      "lon": -77.03637
+    }
+  },
+  {
+    "code": "ZWW",
+    "name": "Newport News Railway",
+    "city_code": "PHF",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 43.90126,
+      "lon": 87.47515
+    }
+  },
+  {
+    "code": "ZXA",
+    "name": "Aberdeen Railway Station",
+    "city_code": "ABZ",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 57.14749,
+      "lon": -2.095397
+    }
+  },
+  {
+    "code": "ZXE",
+    "name": "Waverley Railway Station",
+    "city_code": "EDI",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 55.950176,
+      "lon": -3.187536
+    }
+  },
+  {
+    "code": "ZXS",
+    "name": "Exchangest Railway",
+    "city_code": "BUF",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 42.886448,
+      "lon": -78.87837
+    }
+  },
+  {
+    "code": "ZYA",
+    "name": "Amsterdam Central Railway Station",
+    "city_code": "AMS",
+    "country_code": "NL",
+    "time_zone": "Europe/Amsterdam",
+    "coordinates": {
+      "lat": 52.373055,
+      "lon": 4.8922224
+    }
+  },
+  {
+    "code": "ZYE",
+    "name": "Eindhoven Railway Station",
+    "city_code": "EIN",
+    "country_code": "NL",
+    "time_zone": "Europe/Amsterdam",
+    "coordinates": {
+      "lat": 51.441643,
+      "lon": 5.4697223
+    }
+  },
+  {
+    "code": "ZYN",
+    "name": "Railway",
+    "city_code": "FNI",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 43.8367,
+      "lon": 4.360054
+    }
+  },
+  {
+    "code": "ZYP",
+    "name": "Penn Railway Station",
+    "city_code": "NYC",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 40.71435,
+      "lon": -74.005974
+    }
+  },
+  {
+    "code": "ZYQ",
+    "name": "Syracuse Railway",
+    "city_code": "SYR",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 43.048122,
+      "lon": -76.14742
+    }
+  },
+  {
+    "code": "ZYR",
+    "name": "Midi Railway Station",
+    "city_code": "BRU",
+    "country_code": "BE",
+    "time_zone": "Europe/Brussels",
+    "coordinates": {
+      "lat": -1,
+      "lon": -1
+    }
+  },
+  {
+    "code": "ZYT",
+    "name": "Maastricht Railway Station",
+    "city_code": "MST",
+    "country_code": "NL",
+    "time_zone": "Europe/Amsterdam",
+    "coordinates": {
+      "lat": 50.851368,
+      "lon": 5.6909723
+    }
+  },
+  {
+    "code": "ZYZ",
+    "name": "Berchem Railway",
+    "city_code": "ANR",
+    "country_code": "BE",
+    "time_zone": "Europe/Brussels",
+    "coordinates": {
+      "lat": 51.21992,
+      "lon": 4.39625
+    }
+  },
+  {
+    "code": "ZZN",
+    "name": "Nationaltheatret RailS",
+    "city_code": "OSL",
+    "country_code": "NO",
+    "time_zone": "Europe/Oslo",
+    "coordinates": {
+      "lat": 59.913868,
+      "lon": 10.752245
+    }
+  },
+  {
+    "code": "БУХ",
+    "name": "Bukhara Railway Station",
+    "city_code": "BHK",
+    "country_code": "UZ",
+    "time_zone": "Asia/Tashkent",
+    "coordinates": {
+      "lat": 39.72239,
+      "lon": 64.54816
+    }
+  },
+  {
+    "code": "ДЖИ",
+    "name": "Jizzakh Railway Station",
+    "city_code": "OMN",
+    "country_code": "UZ",
+    "time_zone": "Asia/Tashkent",
+    "coordinates": {
+      "lat": 40.13318,
+      "lon": 67.82341
+    }
+  },
+  {
+    "code": "КАР",
+    "name": "Karshi Railway Station",
+    "city_code": "KSQ",
+    "country_code": "UZ",
+    "time_zone": "Asia/Tashkent",
+    "coordinates": {
+      "lat": 38.82106,
+      "lon": 65.77752
+    }
+  },
+  {
+    "code": "НАВ",
+    "name": "Navoiy Railway Station",
+    "city_code": "NVI",
+    "country_code": "UZ",
+    "time_zone": "Asia/Tashkent",
+    "coordinates": {
+      "lat": 40.109787,
+      "lon": 65.3682
+    }
+  },
+  {
+    "code": "САМ",
+    "name": "Samarkand Railway Station",
+    "city_code": "SKD",
+    "country_code": "UZ",
+    "time_zone": "Asia/Samarkand",
+    "coordinates": {
+      "lat": 39.68573,
+      "lon": 66.92946
+    }
+  },
+  {
+    "code": "ТАШ",
+    "name": "Tashkent Railway Station",
+    "city_code": "TAS",
+    "country_code": "UZ",
+    "time_zone": "Asia/Tashkent",
+    "coordinates": {
+      "lat": 41.291847,
+      "lon": 69.28656
+    }
+  }
+]

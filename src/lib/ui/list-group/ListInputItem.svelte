@@ -22,7 +22,7 @@
     outline: none;
     background-color: transparent;
     height: 100%;
-    padding: 10px 14px;
-    font-size: 14px;
+    padding: 0.75rem;
+    font-size: 1rem;
   }
 </style>

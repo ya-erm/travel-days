@@ -4,8 +4,7 @@
   let hidden = true;
 </script>
 
-<h2>Spoilers</h2>
-
+<h2>Spoiler</h2>
 <SpoilerToggle bind:hidden>Spoiler Toggle</SpoilerToggle>
 <Spoiler {hidden}>
   <h3>Content example</h3>

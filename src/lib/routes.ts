@@ -10,6 +10,8 @@ type RouteKey =
   | 'login'
   | 'logout'
   | 'register'
+  | 'trips'
+  | 'trips.add'
   | 'settings'
   | 'settings.language'
   | 'settings.import_export'
@@ -32,6 +34,14 @@ export const routes: { [key in RouteKey]: Route } = {
   register: {
     path: '/register',
     title: 'auth.register.title',
+  },
+  trips: {
+    path: '/trips',
+    title: 'trips.title',
+  },
+  'trips.add': {
+    path: '/trips/add',
+    title: 'trips.add.title',
   },
   settings: {
     path: '/settings',

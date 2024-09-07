@@ -6,6 +6,7 @@
   export let disabled: boolean = false;
   export let error: string | boolean | null = false;
   export let testId: string | null = 'InputLabel';
+  export let id: string | null = null;
 
   export let v2 = false;
   export let value: string | null | undefined = undefined;
@@ -22,6 +23,7 @@
   class:as-label={asLabel}
   class:as-placeholder={asPlaceholder}
   data-testId={testId}
+  {id}
 >
   <span class="text">{text}</span>
   {#if optional}

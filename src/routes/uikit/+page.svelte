@@ -6,10 +6,12 @@
   import Buttons from './Buttons.svelte';
   import Colors from './Colors.svelte';
   import Inputs from './Inputs.svelte';
+  import Lists from './Lists.svelte';
   import Modals from './Modals.svelte';
   import Spoilers from './Spoilers.svelte';
   import Switches from './Switches.svelte';
   import Tags from './Tags.svelte';
+  import TextAreas from './TextAreas.svelte';
   import Toasts from './Toasts.svelte';
 
   useTitle('UI Kit');
@@ -26,9 +28,11 @@
   <h1>Components</h1>
   <Buttons />
   <Inputs />
+  <TextAreas />
   <Toasts />
   <Modals />
   <Spoilers />
   <Switches />
   <Tags />
+  <Lists />
 </div>

@@ -1,58 +1,73 @@
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
+  import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
 
+  export let id: string = 'modal';
   export let opened: boolean;
   export let header: string | null = null;
   export let width: string | number | null = null;
 
-  const dispatch = createEventDispatcher();
-  const close = () => {
+  export let onClose: (() => void) | null = null;
+
+  let dialog: HTMLDialogElement;
+
+  const handleClose = () => {
     opened = false;
-    dispatch('close');
+    onClose?.();
   };
 
-  let modal: HTMLDivElement;
+  $: if (opened) {
+    dialog?.showModal();
+  } else if (dialog?.open) {
+    dialog?.close();
+  }
 
-  const handleKeydown = (e: KeyboardEvent) => {
-    if (opened && e.key === 'Escape') {
-      close();
-    }
-  };
+  onMount(() => {
+    const handleClick = (e: MouseEvent) => {
+      const dialogElement = dialog;
+      const isClickedOnBackDrop = e.target === dialogElement;
+      if (isClickedOnBackDrop) {
+        dialogElement.close();
+      }
+    };
+    dialog.addEventListener('click', handleClick);
+    return () => dialog.removeEventListener('click', handleClick);
+  });
 </script>
 
-<svelte:window on:keydown={handleKeydown} />
-
 {#if opened}
-  <div
-    class="modal-background flex-center"
-    in:fade={{ duration: 300 }}
-    out:fade={{ duration: 300 }}
-    on:click={close}
-    aria-hidden
-  >
-    <div
-      class="modal"
-      role="dialog"
-      aria-modal="true"
-      bind:this={modal}
-      on:click|stopPropagation
-      in:fade={{ duration: 100 }}
-      out:fade={{ duration: 100 }}
-      style:width={typeof width === 'string' ? width : `${width}rem`}
-      aria-hidden
-    >
-      {#if $$slots.header}
-        <slot name="header" />
-      {:else if !!header}
-        <div class="header">{header}</div>
-      {/if}
-      <slot />
-    </div>
-  </div>
+  <div class="modal-background" in:fade={{ duration: 300 }} out:fade={{ duration: 300 }} aria-hidden />
 {/if}
 
+<div class="flex-center">
+  <dialog
+    class="modal"
+    open={opened}
+    aria-modal="true"
+    bind:this={dialog}
+    on:close={handleClose}
+    in:fade={{ duration: 100 }}
+    out:fade={{ duration: 100 }}
+    style:width={typeof width === 'string' ? width : `${width}rem`}
+    aria-labelledby={`${id}.header`}
+  >
+    {#if $$slots.header}
+      <slot name="header" />
+    {:else if !!header}
+      <h2 class="header" id={`${id}.header`}>{header}</h2>
+    {/if}
+    <slot />
+  </dialog>
+</div>
+
 <style>
+  dialog {
+    color: var(--primary-text-color);
+  }
+  dialog::backdrop {
+    background: transparent;
+  }
+
   .modal-background {
     position: fixed;
     top: 0;
@@ -77,7 +92,9 @@
   }
   .header {
     font-weight: 600;
+    font-size: inherit;
     text-align: center;
+    margin: 0;
     margin-bottom: 1rem;
   }
 </style>

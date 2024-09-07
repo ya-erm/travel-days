@@ -59,6 +59,9 @@ addCollection({
     pencil: {
       body: '<path fill="currentColor" d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/>',
     },
+    magnify: {
+      body: '<path fill="currentColor" d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5l-1.5 1.5l-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16A6.5 6.5 0 0 1 3 9.5A6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14S14 12 14 9.5S12 5 9.5 5"/>',
+    },
     'swap-horizontal': { body: '<path fill="currentColor" d="m21 9l-4-4v3h-7v2h7v3M7 11l-4 4l4 4v-3h7v-2H7z"/>' },
     'swap-vertical': { body: '<path fill="currentColor" d="M9 3L5 7h3v7h2V7h3m3 10v-7h-2v7h-3l4 4l4-4z"/>' },
     translate: {
@@ -66,7 +69,7 @@ addCollection({
     },
   },
   lastModified: 1718880438,
-  aliases: { analytics: { parent: 'poll' }, add: { parent: 'plus' } },
+  aliases: { analytics: { parent: 'poll' }, add: { parent: 'plus' }, search: { parent: 'magnify' } },
   width: 24,
   height: 24,
 });

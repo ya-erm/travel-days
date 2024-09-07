@@ -10,7 +10,7 @@
   import { menu } from './menu';
 
   const isActive = derived(page, (page) => {
-    return (path: string) => page.url.pathname.startsWith(path);
+    return (path: string, exact?: boolean) => (exact ? page.url.pathname === path : page.url.pathname.startsWith(path));
   });
 
   const hidden = derived(page, (page) => {
@@ -18,14 +18,15 @@
   });
 </script>
 
-<div class="menu-bar" class:hidden={$hidden}>
+<div class="menu-bar" class:hidden={$hidden} role="menubar">
   {#each $menu as item}
     <a
       href={item.path}
       class="menu-item"
       data-testId="MenuItem"
-      class:active={$isActive(item.path)}
+      class:active={$isActive(item.path, item.exact)}
       on:click={() => backLink.set(null)}
+      role="menuitem"
     >
       <Icon name={item.icon} size={1.5} />
       <span class="text">{$translate(item.title)}</span>

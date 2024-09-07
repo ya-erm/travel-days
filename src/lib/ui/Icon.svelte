@@ -13,7 +13,7 @@
   const _padding = typeof padding === 'number' ? `${padding}rem` : padding;
 </script>
 
-<span class="icon-container" style:padding={_padding}>
+<span class="icon-container" style:padding={_padding} aria-hidden>
   <span style:width={_width} style:height={_height}>
     <Icon icon={name} width={_width} height={_height} {color} inline />
   </span>
