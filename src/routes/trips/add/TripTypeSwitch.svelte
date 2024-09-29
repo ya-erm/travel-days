@@ -1,10 +1,9 @@
 <script lang="ts">
   import { type ComponentProps } from 'svelte';
 
+  import type { TripType } from '$lib/data/trips';
   import { translate } from '$lib/translate';
   import MultiSwitch from '$lib/ui/MultiSwitch.svelte';
-
-  type TripType = 'airplane' | 'car' | 'ship';
 
   export let value: TripType;
 

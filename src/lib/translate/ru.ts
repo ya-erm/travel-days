@@ -62,6 +62,12 @@ export const ruDict: Dictionary = {
   'trips.add.country_placeholder': 'Выберите страну',
   'trips.add.city_placeholder': 'Выберите город',
   'trips.add.airport_placeholder': 'Выберите аэропорт',
+  'trips.add.departure_point_required': 'Выберите пункт отправления',
+  'trips.add.arrival_point_required': 'Выберите пункт назначения',
+  'trips.add.departure_date_time_required': 'Укажите дату отправления',
+  'trips.add.arrival_date_time_required': 'Укажите дату прибытия',
+  'trips.edit.title': 'Изменить поездку',
+  'trips.edit.delete_trip': 'Удалить поездку',
   // Timezones
   'timezones.select_time_zone': 'Выберите часовой пояс',
   'timezones.current_time_zone': 'Текущий часовой пояс',

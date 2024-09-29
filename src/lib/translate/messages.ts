@@ -58,6 +58,12 @@ export type Messages =
   | 'trips.add.country_placeholder'
   | 'trips.add.city_placeholder'
   | 'trips.add.airport_placeholder'
+  | 'trips.add.departure_point_required'
+  | 'trips.add.arrival_point_required'
+  | 'trips.add.departure_date_time_required'
+  | 'trips.add.arrival_date_time_required'
+  | 'trips.edit.title'
+  | 'trips.edit.delete_trip'
   // Timezones
   | 'timezones.select_time_zone'
   | 'timezones.current_time_zone'

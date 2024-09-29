@@ -7,11 +7,13 @@ import data from './raw/cities.json';
 import dataRu from './raw/cities.ru.json';
 
 export type City = {
+  id: string;
   code: string;
   name: string;
   country?: Country;
   timeZone: string;
   coordinates: { lat: number; lon: number };
+  aliases?: string[];
 };
 
 const ruNames = dataRu.reduce(
@@ -34,11 +36,13 @@ const translateName = (code: string, name: string, locale: Locales) => {
 export const cities = derived([activeLocale, countries], ([locale, countries]) => {
   return data.map(
     (city): City => ({
+      id: city.code,
       code: city.code,
       name: translateName(city.code, city.name, locale),
       country: countries.find((country) => country.code === city.country_code),
       timeZone: city.time_zone,
       coordinates: city.coordinates,
+      aliases: [city.name],
     }),
   );
 });

@@ -1,29 +1,36 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { type ComponentProps } from 'svelte';
+  import { v4 as uuid } from 'uuid';
 
+  import type { Trip, TripDBO, TripPoint, TripType } from '$lib/data/trips';
   import { translate } from '$lib/translate';
+  import Button from '$lib/ui/Button.svelte';
   import DateTimeInput from '$lib/ui/DateTimeInput.svelte';
   import Layout from '$lib/ui/Layout.svelte';
   import Portal from '$lib/ui/Portal.svelte';
   import TextArea from '$lib/ui/TextArea.svelte';
+  import { showErrorToast } from '$lib/ui/toasts';
   import { deleteSearchParam, getSearchParam, setSearchParam } from '$lib/utils';
 
   import TripPointForm from './TripPointForm.svelte';
   import TripPointInput from './TripPointInput.svelte';
   import TripTypeSwitch from './TripTypeSwitch.svelte';
 
-  let tripType: ComponentProps<TripTypeSwitch>['value'] = 'airplane';
+  export let trip: Trip | null = null;
+  export let onSubmit: (trip: TripDBO) => void;
 
-  type TripPoint = ComponentProps<TripPointForm>['point'];
+  let tripType: TripType = trip?.type ?? 'airplane';
 
-  let departurePoint: TripPoint | null = null;
-  let arrivalPoint: TripPoint | null = null;
+  let departurePoint: TripPoint | null = trip?.from ?? null;
+  let arrivalPoint: TripPoint | null = trip?.to ?? null;
 
-  const handleSubmit = () => {
-    // TODO
-    console.log('Submit');
-  };
+  let departureDateTime: string | null = trip?.departure.dateTime ?? null;
+  let departureTimeZone: string | null = trip?.departure.timeZone ?? null;
+  let arrivalDateTime: string | null = trip?.arrival.dateTime ?? null;
+  let arrivalTimeZone: string | null = trip?.arrival.timeZone ?? null;
+
+  let additionalInfo: string | null = trip?.comment ?? null;
 
   $: pointSelectingParam = getSearchParam($page, 'pointSelecting');
   $: pointSelecting = pointSelectingParam === 'from' || pointSelectingParam === 'to';
@@ -41,10 +48,54 @@
   const handlePointSubmit: ComponentProps<TripPointForm>['onSubmit'] = (point) => {
     if (pointSelectingParam === 'from') {
       departurePoint = point;
+      departureTimeZone = point.city.timeZone;
     } else if (pointSelectingParam === 'to') {
       arrivalPoint = point;
+      arrivalTimeZone = point.city.timeZone;
     }
     void closePointSelecting();
+  };
+
+  const handleSubmit = () => {
+    if (!departurePoint) {
+      showErrorToast($translate('trips.add.departure_point_required'));
+      return;
+    }
+    if (!arrivalPoint) {
+      showErrorToast($translate('trips.add.arrival_point_required'));
+      return;
+    }
+    if (!departureDateTime || !departureTimeZone) {
+      showErrorToast($translate('trips.add.departure_date_time_required'));
+      return;
+    }
+    if (!arrivalDateTime || !arrivalTimeZone) {
+      showErrorToast($translate('trips.add.arrival_date_time_required'));
+      return;
+    }
+    onSubmit({
+      id: trip?.id ?? uuid(),
+      type: tripType,
+      from: {
+        countryId: departurePoint.country.id,
+        cityId: departurePoint.city.id,
+        airportId: departurePoint.airport?.id,
+      },
+      to: {
+        countryId: arrivalPoint.country.id,
+        cityId: arrivalPoint.city.id,
+        airportId: arrivalPoint.airport?.id,
+      },
+      departure: {
+        dateTime: departureDateTime,
+        timeZone: departureTimeZone,
+      },
+      arrival: {
+        dateTime: arrivalDateTime,
+        timeZone: arrivalTimeZone,
+      },
+      comment: additionalInfo ?? undefined,
+    });
   };
 </script>
 
@@ -54,33 +105,43 @@
     label={$translate('trips.add.from')}
     placeholder={$translate('trips.add.from_placeholder')}
     onClick={() => openPointSelecting('from')}
+    value={departurePoint}
   />
   <TripPointInput
     label={$translate('trips.add.to')}
     placeholder={$translate('trips.add.to_placeholder')}
     onClick={() => openPointSelecting('to')}
+    value={arrivalPoint}
   />
-  <DateTimeInput label={$translate('trips.add.departure')} />
-  <DateTimeInput label={$translate('trips.add.arrival')} />
-  <TextArea label={$translate('trips.add.additional_info')} />
+  <DateTimeInput
+    label={$translate('trips.add.departure')}
+    bind:value={departureDateTime}
+    bind:zone={departureTimeZone}
+  />
+  <DateTimeInput label={$translate('trips.add.arrival')} bind:value={arrivalDateTime} bind:zone={arrivalTimeZone} />
+  <TextArea label={$translate('trips.add.additional_info')} bind:value={additionalInfo} />
+  <Button type="submit">{$translate('common.save')}</Button>
+  <slot name="footer" />
 </form>
 
-<Portal visible={pointSelecting}>
-  <Layout
-    header={{
-      backButton: {
-        onClick: closePointSelecting,
-      },
-      leftButton: null,
-      rightButton: null,
-      title: $translate(pointSelectingParam === 'from' ? 'trips.add.from' : 'trips.add.to'),
-    }}
-  >
-    <div class="p-1">
-      <TripPointForm
-        point={pointSelectingParam === 'from' ? departurePoint : arrivalPoint}
-        onSubmit={handlePointSubmit}
-      />
-    </div>
-  </Layout>
-</Portal>
+{#if pointSelecting}
+  <Portal visible={pointSelecting}>
+    <Layout
+      header={{
+        backButton: {
+          onClick: closePointSelecting,
+        },
+        leftButton: null,
+        rightButton: null,
+        title: $translate(pointSelectingParam === 'from' ? 'trips.add.from' : 'trips.add.to'),
+      }}
+    >
+      <div class="p-1">
+        <TripPointForm
+          point={pointSelectingParam === 'from' ? departurePoint : arrivalPoint}
+          onSubmit={handlePointSubmit}
+        />
+      </div>
+    </Layout>
+  </Portal>
+{/if}

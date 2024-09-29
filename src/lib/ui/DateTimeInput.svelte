@@ -12,18 +12,32 @@
 
   export let label: string | null = null;
   export let value: string | null = null;
-  export let timeZone: string = dayjs.tz.guess();
+  export let zone: string | null = null;
+
+  $: timeZone = zone ?? dayjs.tz.guess();
 
   let timeZoneListVisible = false;
 
+  const today = dayjs().format('YYYY-MM-DD');
+
+  const getDateTime = (date: string | null, time: string | null) => {
+    if (!date && !time) return null;
+    return dayjs.tz(`${date ?? today} ${time ?? ''}`, timeZone).format();
+  };
+
   $: date = value ? dayjs(value).tz(timeZone).format('YYYY-MM-DD') : null;
   $: time = value ? dayjs(value).tz(timeZone).format('HH:mm') : null;
-  $: datetime = value
-    ? timeZone
-      ? dayjs.tz(`${date} ${time}`, timeZone).format()
-      : dayjs(`${date} ${time}`).tz('UTC').format()
-    : '';
+  $: datetime = getDateTime(date, time);
   $: timeZoneShift = timeZone ? getTimeZoneOffset(timeZone) : null;
+
+  const handleDateChanged = (v: string) => {
+    datetime = getDateTime(v, time);
+    value = datetime;
+  };
+  const handleTimeChanged = (v: string) => {
+    datetime = getDateTime(date, v);
+    value = datetime;
+  };
 </script>
 
 <div class="flex-col gap-0.5">
@@ -43,29 +57,31 @@
     </Button>
   </div>
   <div class="flex gap-1">
-    <Input name="date" type="date" bind:value={date} required />
-    <Input name="time" type="time" bind:value={time} required />
+    <Input name="date" type="date" bind:value={date} required onChange={handleDateChanged} />
+    <Input name="time" type="time" bind:value={time} required onChange={handleTimeChanged} />
   </div>
-  <input name="datetime" value={datetime} class="hidden" readonly />
 </div>
 
 <Portal visible={timeZoneListVisible}>
   <Layout
     header={{
       title: $translate('timezones.select_time_zone'),
-      backButton: { title: $translate('common.back'), onClick: () => (timeZoneListVisible = false) },
+      backButton: { title: '', onClick: () => (timeZoneListVisible = false) },
       leftButton: null,
       rightButton: null,
     }}
   >
-    <TimeZoneList
-      onClick={(tz, shift) => {
-        timeZone = tz;
-        timeZoneShift = shift;
-        date = dayjs.utc(datetime).tz(timeZone).format('YYYY-MM-DD');
-        time = dayjs.utc(datetime).tz(timeZone).format('HH:mm');
-        timeZoneListVisible = false;
-      }}
-    />
+    <div class="p-1">
+      <TimeZoneList
+        onClick={(tz, shift) => {
+          timeZone = tz;
+          timeZoneShift = shift;
+          datetime = getDateTime(date, time);
+          timeZoneListVisible = false;
+          value = datetime;
+          zone = tz;
+        }}
+      />
+    </div>
   </Layout>
 </Portal>

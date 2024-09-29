@@ -1,13 +1,23 @@
 <script lang="ts">
+  import type { TripPoint } from '$lib/data/trips';
   import Button from '$lib/ui/Button.svelte';
   import Icon from '$lib/ui/Icon.svelte';
   import InputLabel from '$lib/ui/InputLabel.svelte';
 
   export let label: string | null = null;
-  export let icon: string | null = null;
+  export let value: TripPoint | null = null;
   export let placeholder: string | null = null;
-  export let text: string | null = null;
   export let onClick: (() => void) | null = null;
+
+  $: icon = value?.country?.code ? `flag:${value?.country.code.toLocaleLowerCase()}-1x1` : null;
+
+  $: text = (() => {
+    const countryName = value?.country?.name;
+    const cityName = value?.airport?.name !== value?.city.name ? value?.city?.name : null;
+    const place = cityName && countryName ? `${cityName}, ${countryName}` : (countryName ?? cityName);
+    const airport = value?.airport ? `${value?.airport.code} - ${value?.airport.name}` : null;
+    return airport && place ? `${airport}, ${place}` : airport;
+  })();
 </script>
 
 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -17,7 +27,7 @@
   {/if}
   <Button color="white" bordered on:click={onClick}>
     <div class="w-full flex items-center gap-0.5">
-      <div class="icon">
+      <div class="flex-center icon">
         {#if icon}
           <Icon name={icon} />
         {:else}
@@ -39,6 +49,7 @@
 
 <style>
   .icon {
+    overflow: hidden;
     border-radius: 50%;
     border: 1px solid var(--border-color);
   }

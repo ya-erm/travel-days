@@ -8,6 +8,7 @@ import data from './raw/airports.json';
 import dataRu from './raw/airports.ru.json';
 
 export type Airport = {
+  id: string;
   code: string;
   name: string;
   city?: City;
@@ -36,6 +37,7 @@ const translateName = (code: string, name: string, locale: Locales) => {
 export const airports = derived([activeLocale, countries, cities], ([locale, countries, cities]) => {
   return data.map(
     (airport): Airport => ({
+      id: airport.code,
       code: airport.code,
       name: translateName(airport.code, airport.name, locale),
       city: cities.find((city) => city.code === airport.city_code),

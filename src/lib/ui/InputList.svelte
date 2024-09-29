@@ -3,6 +3,8 @@
   import InputLabel from '$lib/ui/InputLabel.svelte';
   import resizeObserver from '$lib/utils/resizeObserver';
   import ButtonBase from '$lib/ui/ButtonBase.svelte';
+  import { translate } from '$lib/translate';
+  import Button from './Button.svelte';
 
   export let label: string | null = null;
   export let placeholder: string | null = null;
@@ -20,6 +22,7 @@
   export let noOptionsText: string | null = null;
   export let error: string | null = null;
   export let clearable = false;
+  export let testId: string | null = 'InputList';
 
   export let v2 = false;
 
@@ -95,12 +98,27 @@
     const startSlotWidth = startSlot?.getBoundingClientRect().width ?? 0;
     ref?.style.setProperty('padding-left', startSlotWidth ? `${startSlotWidth}px` : '0.75rem');
   };
+
+  const clearValue = () => {
+    value = '';
+    onChange?.('');
+    onSelect?.(null);
+  };
 </script>
 
-<div class="flex-col gap-0.5">
+<div class="flex-col gap-0.5" data-testId={`${testId}.Container`}>
   {#if label}
     <label class="flex-col" for={`${id}.input`}>
-      <InputLabel text={label} {optional} {disabled} {error} {v2} {value} id={`${id}.label`} />
+      <InputLabel
+        text={label}
+        {optional}
+        {disabled}
+        {error}
+        {v2}
+        {value}
+        id={`${id}.label`}
+        testId={`${testId}.Label`}
+      />
     </label>
   {/if}
   <div class="container relative">
@@ -147,8 +165,25 @@
           aria-activedescendant={getOptionId(selectedItemId)}
           aria-expanded={listVisible}
           aria-labelledby={`${id}.label`}
+          data-testId={testId}
           id={`${id}.input`}
         />
+        <div class="end-slot flex items-center">
+          {#if clearable && !!value}
+            <div class="flex-center" title={$translate('common.clear')}>
+              <Button
+                on:click={clearValue}
+                appearance="link"
+                color={error ? 'danger' : 'secondary'}
+                aria-label={$translate('common.clear')}
+                testId={`${testId}.ClearButton`}
+                {disabled}
+              >
+                <Icon name="mdi:close" size={1.25} padding={0.5} />
+              </Button>
+            </div>
+          {/if}
+        </div>
       </div>
       {#if listVisible}
         <ul class="list" id={`${id}.list`} role="listbox" tabindex="-1">

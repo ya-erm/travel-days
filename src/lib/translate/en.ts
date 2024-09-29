@@ -61,6 +61,12 @@ export const enDict: Dictionary = {
   'trips.add.country_placeholder': 'Select country',
   'trips.add.city_placeholder': 'Select city',
   'trips.add.airport_placeholder': 'Select airport',
+  'trips.add.departure_point_required': 'Select departure point',
+  'trips.add.arrival_point_required': 'Select destination point',
+  'trips.add.departure_date_time_required': 'Select departure date',
+  'trips.add.arrival_date_time_required': 'Select arrival date',
+  'trips.edit.title': 'Edit trip',
+  'trips.edit.delete_trip': 'Delete trip',
   // Timezones
   'timezones.select_time_zone': 'Select time zone',
   'timezones.current_time_zone': 'Current time zone',

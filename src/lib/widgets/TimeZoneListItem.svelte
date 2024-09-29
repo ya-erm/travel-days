@@ -1,12 +1,11 @@
 <script lang="ts">
-  import ListGroupItem from '$lib/ui/list-group/ListGroupItem.svelte';
-  import { longPress, toShortTimezoneOffset } from '$lib/utils';
+  import type { TimeZone } from '@vvo/tzdb';
 
-  export let timezone: {
-    tzCode: string;
-    name: string;
-    utc: string;
-  };
+  import ListGroupItem from '$lib/ui/list-group/ListGroupItem.svelte';
+  import { longPress } from '$lib/utils';
+  import { minutesToOffset } from '$lib/utils/getTimeZoneOffset';
+
+  export let timezone: TimeZone;
 
   export let onClick: (timezone: string, shift: string) => void;
   export let onLongClick: ((timezone: string) => void) | null = null;
@@ -15,15 +14,15 @@
 <ListGroupItem>
   <button
     class="item flex gap-1 items-center"
-    on:click={() => onClick(timezone.tzCode, toShortTimezoneOffset(timezone.utc))}
-    use:longPress={() => onLongClick?.(timezone.tzCode)}
+    on:click={() => onClick(timezone.name, minutesToOffset(timezone.currentTimeOffsetInMinutes))}
+    use:longPress={() => onLongClick?.(timezone.name)}
   >
     <div class="flex-col gap-0.25 items-start flex-grow">
-      <span class="name text-ellipsis-all">{timezone.tzCode}</span>
-      <span class="description text-ellipsis-all">{timezone.name}</span>
+      <span class="name text-ellipsis-all">{timezone.name}</span>
+      <span class="description text-ellipsis-all">{timezone.mainCities.join(', ')}</span>
     </div>
     <span class="utc">
-      GMT{timezone.utc}
+      UTC{minutesToOffset(timezone.currentTimeOffsetInMinutes)}
     </span>
   </button>
 </ListGroupItem>

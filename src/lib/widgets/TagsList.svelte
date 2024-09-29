@@ -1,10 +1,11 @@
 <script lang="ts">
   import { v4 as uuid } from 'uuid';
 
-  import type { Tag } from '$lib/data/interfaces';
   import { translate } from '$lib/translate';
   import Tags from '$lib/ui/Tags.svelte';
   import { showErrorToast } from '$lib/ui/toasts';
+
+  type Tag = { id: string; name: string };
 
   export let tags: Tag[];
   export let selectedTags: string[] = [];

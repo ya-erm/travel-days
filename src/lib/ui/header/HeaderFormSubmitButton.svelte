@@ -3,7 +3,13 @@
   import Button from '$lib/ui/Button.svelte';
 
   const handleSave = () => {
-    document.querySelector('form')?.dispatchEvent(new Event('submit'));
+    const form = document.querySelector('form');
+    const submitButton = form?.querySelector("button[type='submit']") as HTMLButtonElement;
+    if (submitButton) {
+      submitButton.click();
+    } else {
+      form?.dispatchEvent(new Event('submit'));
+    }
   };
 </script>
 

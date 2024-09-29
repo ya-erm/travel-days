@@ -1,7 +1,7 @@
 import { browser } from '$app/environment';
-import { writable } from 'svelte/store';
+import { store } from './store';
 
-export const LS_PREFIX = 'mk_';
+export const LS_PREFIX = 'td_';
 
 /**
  * Writable store, synchronised with local storage
@@ -10,11 +10,11 @@ export const LS_PREFIX = 'mk_';
  */
 export function storable<T>(defaultValue: T, name: string) {
   if (!browser) {
-    return writable(defaultValue);
+    return store(defaultValue);
   }
 
   const json = localStorage?.getItem(`${LS_PREFIX}${name}`);
-  const store = writable(json ? (JSON.parse(json) as T) : defaultValue);
-  store.subscribe((value) => localStorage?.setItem(`${LS_PREFIX}${name}`, JSON.stringify(value)));
-  return store;
+  const s = store(json ? (JSON.parse(json) as T) : defaultValue);
+  s.subscribe((value) => localStorage?.setItem(`${LS_PREFIX}${name}`, JSON.stringify(value)));
+  return s;
 }
