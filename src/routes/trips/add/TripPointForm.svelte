@@ -8,6 +8,7 @@
   import InputList from '$lib/ui/InputList.svelte';
 
   export let point: TripPoint | null = null;
+  export let withoutAirport: boolean = false;
   export let onSubmit: (point: TripPoint) => void;
 
   let countryCode = point?.country.code;
@@ -95,7 +96,6 @@
       id: item.code,
     }))}
     onSelect={(item) => {
-      console.log(item);
       if (item === null || item?.id !== countryCode) {
         cityCode = undefined;
         airportCode = undefined;
@@ -137,37 +137,39 @@
     clearable
   />
 
-  <InputList
-    id="airport:input-list"
-    bind:value={airportSearch}
-    onChange={(text) => {
-      if (text !== airport?.name) {
-        airportCode = undefined;
-      }
-    }}
-    label={$translate('trips.add.airport')}
-    placeholder={$translate('trips.add.airport_placeholder')}
-    noOptionsText={countrySearch.length <= 2 ? 'Начните вводить название' : 'Ничего не найдено'}
-    icon={airport ? 'material-symbols-light:travel' : 'mdi:search'}
-    items={filteredAirports.map((item) => ({
-      title: item.name,
-      description: `${item.code} - ${item.city?.name}, ${item.city?.country?.name}`,
-      id: item.code,
-    }))}
-    onSelect={(item) => {
-      airportCode = item?.id;
-      const airport = $airports.find(({ code }) => code === airportCode);
-      if (!countryCode) {
-        countryCode = airport?.country?.code;
-        countrySearch = airport?.country?.name ?? '';
-      }
-      if (!cityCode) {
-        cityCode = airport?.city?.code;
-        citySearch = airport?.city?.name ?? '';
-      }
-    }}
-    clearable
-  />
+  {#if !withoutAirport}
+    <InputList
+      id="airport:input-list"
+      bind:value={airportSearch}
+      onChange={(text) => {
+        if (text !== airport?.name) {
+          airportCode = undefined;
+        }
+      }}
+      label={$translate('trips.add.airport')}
+      placeholder={$translate('trips.add.airport_placeholder')}
+      noOptionsText={countrySearch.length <= 2 ? 'Начните вводить название' : 'Ничего не найдено'}
+      icon={airport ? 'material-symbols-light:travel' : 'mdi:search'}
+      items={filteredAirports.map((item) => ({
+        title: item.name,
+        description: `${item.code} - ${item.city?.name}, ${item.city?.country?.name}`,
+        id: item.code,
+      }))}
+      onSelect={(item) => {
+        airportCode = item?.id;
+        const airport = $airports.find(({ code }) => code === airportCode);
+        if (!countryCode) {
+          countryCode = airport?.country?.code;
+          countrySearch = airport?.country?.name ?? '';
+        }
+        if (!cityCode) {
+          cityCode = airport?.city?.code;
+          citySearch = airport?.city?.name ?? '';
+        }
+      }}
+      clearable
+    />
+  {/if}
 
   <Button type="submit">{$translate('common.continue')}</Button>
 </form>

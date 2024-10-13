@@ -38,6 +38,11 @@ export type Messages =
   | 'common.data_problems'
   | 'common.select_all'
   | 'common.date_and_time'
+  | 'common.date.from'
+  | 'common.date.until'
+  | 'common.date.currentTime'
+  | 'common.time.h'
+  | 'common.time.m'
   // Trips
   | 'trips.title'
   | 'trips.add.title'
@@ -56,6 +61,7 @@ export type Messages =
   | 'trips.add.to_placeholder'
   | 'trips.add.departure'
   | 'trips.add.arrival'
+  | 'trips.add.transfer'
   | 'trips.add.additional_info'
   | 'trips.add.country'
   | 'trips.add.city'
@@ -69,6 +75,7 @@ export type Messages =
   | 'trips.add.arrival_date_time_required'
   | 'trips.edit.title'
   | 'trips.edit.delete_trip'
+  | 'trips.list.item.days'
   // Timezones
   | 'timezones.select_time_zone'
   | 'timezones.current_time_zone'

@@ -42,6 +42,11 @@ export const ruDict: Dictionary = {
     '{count, plural, one {Обнаружена # ошибка} few {Обнаружено # ошибки} other {Обнаружено # ошибок}} при инициализации данных',
   'common.select_all': 'Выбрать все',
   'common.date_and_time': 'Дата и время',
+  'common.date.from': 'с {date}',
+  'common.date.until': 'до {date}',
+  'common.date.currentTime': 'настоящее время',
+  'common.time.h': '{hours} ч',
+  'common.time.m': '{minutes} мин',
   // Trips
   'trips.title': 'Поездки',
   'trips.add.title': 'Новая поездка',
@@ -60,6 +65,7 @@ export const ruDict: Dictionary = {
   'trips.add.to_placeholder': 'Выберите пункт назначения',
   'trips.add.departure': 'Отправление',
   'trips.add.arrival': 'Прибытие',
+  'trips.add.transfer': 'Пересадка',
   'trips.add.additional_info': 'Дополнительная информация',
   'trips.add.country': 'Страна',
   'trips.add.city': 'Город',
@@ -73,6 +79,7 @@ export const ruDict: Dictionary = {
   'trips.add.arrival_date_time_required': 'Укажите дату прибытия',
   'trips.edit.title': 'Изменить поездку',
   'trips.edit.delete_trip': 'Удалить поездку',
+  'trips.list.item.days': '{count, plural, one {день} few {дня} other {дней}}',
   // Timezones
   'timezones.select_time_zone': 'Выберите часовой пояс',
   'timezones.current_time_zone': 'Текущий часовой пояс',

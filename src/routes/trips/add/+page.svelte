@@ -17,7 +17,7 @@
 
   const handleSubmit = async (trip: TripDBO) => {
     tripsService.save(trip);
-    await goto(routes.trips.path);
+    await goto(routes.trips.path, { replaceState: false });
   };
 </script>
 

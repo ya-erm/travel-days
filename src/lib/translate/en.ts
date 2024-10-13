@@ -41,6 +41,11 @@ export const enDict: Dictionary = {
   'common.data_problems': 'Data storage initialization finished with {count, plural, =1 {# error} other {# errors}}',
   'common.select_all': 'Select all',
   'common.date_and_time': 'Date and time',
+  'common.date.from': 'from {date}',
+  'common.date.until': 'until {date}',
+  'common.date.currentTime': 'current time',
+  'common.time.h': '{hours} h',
+  'common.time.m': '{minutes} m',
   // Trips
   'trips.title': 'Trips',
   'trips.add.title': 'New trip',
@@ -48,6 +53,7 @@ export const enDict: Dictionary = {
   'trips.add.departure': 'Departure',
   'trips.add.arrival': 'Arrival',
   'trips.add.additional_info': 'Additional info',
+  'trips.add.transfer': 'Transfer',
   'trips.add.airplane': 'Plane',
   'trips.add.car': 'Car',
   'trips.add.ship': 'Ship',
@@ -72,6 +78,7 @@ export const enDict: Dictionary = {
   'trips.add.arrival_date_time_required': 'Select arrival date',
   'trips.edit.title': 'Edit trip',
   'trips.edit.delete_trip': 'Delete trip',
+  'trips.list.item.days': '{count, plural, one {day} other {days}}',
   // Timezones
   'timezones.select_time_zone': 'Select time zone',
   'timezones.current_time_zone': 'Current time zone',

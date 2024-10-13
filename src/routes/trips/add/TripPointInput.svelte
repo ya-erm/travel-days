@@ -16,7 +16,10 @@
     const cityName = value?.airport?.name !== value?.city.name ? value?.city?.name : null;
     const place = cityName && countryName ? `${cityName}, ${countryName}` : (countryName ?? cityName);
     const airport = value?.airport ? `${value?.airport.code} - ${value?.airport.name}` : null;
-    return airport && place ? `${airport}, ${place}` : airport;
+    if (!airport) {
+      return place;
+    }
+    return place ? `${airport}, ${place}` : airport;
   })();
 </script>
 

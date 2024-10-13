@@ -27,6 +27,7 @@ export type TripDBO = {
   comment?: string;
   flightNumber?: string;
   airlineName?: string;
+  isTransfer?: boolean;
   deleted?: boolean;
 };
 
@@ -48,6 +49,7 @@ export type Trip = {
   comment?: string;
   flightNumber?: string;
   airlineName?: string;
+  isTransfer?: boolean;
   deleted?: boolean;
 };
 

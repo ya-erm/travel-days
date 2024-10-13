@@ -6,6 +6,7 @@
   import type { Trip, TripDBO, TripPoint, TripType } from '$lib/data/trips';
   import { translate } from '$lib/translate';
   import Button from '$lib/ui/Button.svelte';
+  import Checkbox from '$lib/ui/Checkbox.svelte';
   import DateTimeInput from '$lib/ui/DateTimeInput.svelte';
   import Layout from '$lib/ui/Layout.svelte';
   import Portal from '$lib/ui/Portal.svelte';
@@ -36,6 +37,8 @@
   let departureTimeZone: string | null = trip?.departure.timeZone ?? null;
   let arrivalDateTime: string | null = trip?.arrival.dateTime ?? null;
   let arrivalTimeZone: string | null = trip?.arrival.timeZone ?? null;
+
+  let isTransfer: boolean = trip?.isTransfer ?? false;
 
   let additionalInfo: string | null = trip?.comment ?? null;
 
@@ -106,6 +109,7 @@
       comment: additionalInfo ?? undefined,
       flightNumber: flightNumber ?? undefined,
       airlineName: airlineName ?? undefined,
+      isTransfer: isTransfer,
     });
   };
 </script>
@@ -144,6 +148,7 @@
     bind:zone={departureTimeZone}
   />
   <DateTimeInput label={$translate('trips.add.arrival')} bind:value={arrivalDateTime} bind:zone={arrivalTimeZone} />
+  <Checkbox bind:checked={isTransfer} label={$translate('trips.add.transfer')} />
   <TextArea label={$translate('trips.add.additional_info')} bind:value={additionalInfo} />
   <Button type="submit">{$translate('common.save')}</Button>
   <slot name="footer" />
@@ -164,6 +169,7 @@
       <div class="p-1">
         <TripPointForm
           point={pointSelectingParam === 'from' ? departurePoint : arrivalPoint}
+          withoutAirport={tripType !== 'airplane'}
           onSubmit={handlePointSubmit}
         />
       </div>

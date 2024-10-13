@@ -4,12 +4,11 @@
   export let type: 'button' | 'submit' = 'button';
   export let disabled: boolean = false;
   export let testId: string | null = 'Button';
-
   const dispatch = createEventDispatcher();
   export let click = (e: MouseEvent) => dispatch('click', e);
 </script>
 
-<button on:click|stopPropagation={click} data-testId={testId} {disabled} {type} {...$$restProps}>
+<button on:click|stopPropagation={click} data-testId={testId} {disabled} {type}>
   <slot />
 </button>
 
