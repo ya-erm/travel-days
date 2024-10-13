@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { derived, readable } from 'svelte/store';
+  import { derived } from 'svelte/store';
 
+  import { journalService } from '$lib/data/journal';
   import { translate } from '$lib/translate';
   import { useSmartLoading } from '$lib/utils';
 
-  // TODO
-  const state = readable<'downloading' | 'uploading' | 'idle'>('idle');
+  const state = journalService.$state;
 
   const downloading = useSmartLoading(derived(state, (value) => value === 'downloading'));
   const uploading = useSmartLoading(derived(state, (value) => value === 'uploading'));

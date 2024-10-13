@@ -8,6 +8,8 @@ import type { UserSettings } from './userSettings';
 export type User = {
   uuid: string;
   login?: string | null;
+  publicKey?: string | null;
+  privateKey?: string | null;
 };
 
 const currentUserIdStore = storable<string | null>(null, 'current_user');
@@ -74,6 +76,20 @@ export class UserService implements JournalSubscriber {
     const db = await useDB();
     await db.put('users', item);
     this._users.update((prev) => prev.concat(item));
+  }
+
+  /** Delete user from local DB and memory */
+  async delete(item: Pick<User, 'uuid'>) {
+    const db = await useDB();
+    await db.delete('users', item.uuid);
+    this._users.update((prev) => prev.filter(({ uuid }) => uuid !== item.uuid));
+  }
+
+  /** Set current user */
+  async setCurrentUser(user: User) {
+    currentUserIdStore.set(user.uuid);
+    this._loadCurrentUser();
+    await this._loadCurrentUserSettings();
   }
 
   /** @throws error, if no current user */
@@ -160,3 +176,5 @@ export class UserService implements JournalSubscriber {
 }
 
 export const userService = new UserService();
+
+export const currentUserStore = userService.$currentUser;

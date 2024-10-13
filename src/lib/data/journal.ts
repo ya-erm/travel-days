@@ -77,9 +77,7 @@ export class JournalService {
 
   /** Initialisation */
   async init() {
-    if (this._syncNumberUnsubscribe !== undefined) {
-      this._syncNumberUnsubscribe?.();
-    }
+    this._syncNumberUnsubscribe?.();
     this._syncNumberUnsubscribe = this._syncNumber.subscribe((value) => {
       logger.debug('[subscription] _syncNumber:', value);
       if (value >= 0) void userService.updateSyncNumber(value);
@@ -179,7 +177,7 @@ export class JournalService {
       return;
     }
     const settings = userService.currentUserSettings;
-    if (settings?.syncNumber) {
+    if (settings?.syncNumber !== undefined) {
       this._syncNumber.set(settings?.syncNumber);
     }
     const items = await db.getAllFromIndex('journal', 'by-owner', user.uuid);
@@ -246,10 +244,9 @@ export class JournalService {
       }),
     );
 
-    const json = await useFetch<PostManyJournalRequestData, PostManyJournalResponseData>(
-      'POST',
-      '/api/v2/journal',
-    ).fetch({ items });
+    const json = await useFetch<PostManyJournalRequestData, PostManyJournalResponseData>('POST', '/api/journal').fetch({
+      items,
+    });
 
     logger.log('Queue uploaded successfully.', 'New sync number:', json.syncNumber);
     if (json.syncNumber) this._syncNumber.set(json.syncNumber);

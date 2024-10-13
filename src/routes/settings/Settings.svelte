@@ -1,9 +1,11 @@
 <script lang="ts">
   import { version } from '$app/environment';
 
-  import { route } from '$lib/routes';
+  import { currentUserStore, userService } from '$lib/data/users';
+  import { route, routes } from '$lib/routes';
   import { activeLocaleName, translate } from '$lib/translate';
   import LanguageModal from '$lib/translate/LanguageModal.svelte';
+  import Button from '$lib/ui/Button.svelte';
   import Icon from '$lib/ui/Icon.svelte';
   import Loader from '$lib/ui/Loader.svelte';
   import Portal from '$lib/ui/Portal.svelte';
@@ -16,7 +18,18 @@
 
   const [languageModalOpened, openLanguageModal] = createBooleanStore();
 
+  $: currentUser = $currentUserStore;
+  $: userIsLoggedIn = currentUser && !userService.isGuest;
+
   let showLogoutPortal = false;
+
+  async function logout() {
+    showLogoutPortal = true;
+    if (currentUser) {
+      await userService.delete(currentUser);
+    }
+    window.location.assign(routes.login.path);
+  }
 </script>
 
 <ListGroup title={$translate('settings.common')}>
@@ -28,6 +41,13 @@
   />
   <ListSwitchItem title={$translate('settings.darkMode')} bind:checked={$darkMode} />
 </ListGroup>
+<ListGroup title={$translate('settings.profile')}>
+  {#if !userIsLoggedIn}
+    <ListLinkItem title={$translate('auth.sign_in')} href={route('login')} />
+  {:else}
+    <ListSelectItem title={$translate('auth.login')} value={currentUser?.login ?? undefined} />
+  {/if}
+</ListGroup>
 
 <ListGroup title={$translate('settings.debug_tools')}>
   <ListLinkItem title={$translate('settings.logs')} href={route('settings.logs')} />
@@ -36,6 +56,15 @@
 </ListGroup>
 
 <div class="flex-col items-center gap-0.5">
+  {#if userIsLoggedIn}
+    <Button
+      color="danger"
+      appearance="link"
+      underlined={false}
+      on:click={logout}
+      text={$translate('settings.profile.logout')}
+    />
+  {/if}
   <a class="text-decoration-none" href="https://github.com/ya-erm/travel-days/issues" target="_blank" rel="noreferrer">
     <span>
       <span>{$translate('settings.report_problem')}</span>
@@ -50,6 +79,7 @@
 </div>
 
 <LanguageModal bind:opened={$languageModalOpened} />
+
 <Portal visible={showLogoutPortal}>
   <div class="logout-portal flex-col items-center justify-center h-full">
     <h3>{$translate('auth.logging_out')}</h3>

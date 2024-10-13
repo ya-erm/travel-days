@@ -13,6 +13,10 @@
   import { showErrorToast } from '$lib/ui/toasts';
   import { deleteSearchParam, getSearchParam, setSearchParam } from '$lib/utils';
 
+  import Input from '$lib/ui/Input.svelte';
+  import InputLabel from '$lib/ui/InputLabel.svelte';
+  import createBooleanStore from '$lib/utils/createBooleanStore';
+  import FlightSearchModal from './FlightSearchModal.svelte';
   import TripPointForm from './TripPointForm.svelte';
   import TripPointInput from './TripPointInput.svelte';
   import TripTypeSwitch from './TripTypeSwitch.svelte';
@@ -21,6 +25,9 @@
   export let onSubmit: (trip: TripDBO) => void;
 
   let tripType: TripType = trip?.type ?? 'airplane';
+
+  let flightNumber: string | null = trip?.flightNumber ?? null;
+  let airlineName: string | null = trip?.airlineName ?? null;
 
   let departurePoint: TripPoint | null = trip?.from ?? null;
   let arrivalPoint: TripPoint | null = trip?.to ?? null;
@@ -31,6 +38,8 @@
   let arrivalTimeZone: string | null = trip?.arrival.timeZone ?? null;
 
   let additionalInfo: string | null = trip?.comment ?? null;
+
+  const [flightSearchOpened, openFlightSearch] = createBooleanStore();
 
   $: pointSelectingParam = getSearchParam($page, 'pointSelecting');
   $: pointSelecting = pointSelectingParam === 'from' || pointSelectingParam === 'to';
@@ -95,12 +104,28 @@
         timeZone: arrivalTimeZone,
       },
       comment: additionalInfo ?? undefined,
+      flightNumber: flightNumber ?? undefined,
+      airlineName: airlineName ?? undefined,
     });
   };
 </script>
 
 <form class="flex-col gap-1" on:submit|preventDefault={handleSubmit}>
   <TripTypeSwitch bind:value={tripType} />
+  {#if tripType === 'airplane'}
+    <div class="flex-col gap-0.5">
+      <div class="flex gap-1 justify-between">
+        <InputLabel text={$translate('trips.add.flight_number')} />
+        <Button
+          appearance="link"
+          underlined={false}
+          text={$translate('trips.add.flight_number.search')}
+          on:click={openFlightSearch}
+        />
+      </div>
+      <Input bind:value={flightNumber} endText={airlineName} />
+    </div>
+  {/if}
   <TripPointInput
     label={$translate('trips.add.from')}
     placeholder={$translate('trips.add.from_placeholder')}
@@ -145,3 +170,18 @@
     </Layout>
   </Portal>
 {/if}
+
+<FlightSearchModal
+  bind:opened={$flightSearchOpened}
+  {flightNumber}
+  onSuccess={(value) => {
+    airlineName = value.airlineName ?? null;
+    flightNumber = value.flightNumber;
+    departurePoint = value.departurePoint;
+    departureDateTime = value.departureDateTime;
+    departureTimeZone = value.departureTimeZone;
+    arrivalPoint = value.arrivalPoint;
+    arrivalDateTime = value.arrivalDateTime;
+    arrivalTimeZone = value.arrivalTimeZone;
+  }}
+/>

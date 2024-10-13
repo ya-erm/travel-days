@@ -25,6 +25,8 @@ export type TripDBO = {
   departure: DateTime;
   arrival: DateTime;
   comment?: string;
+  flightNumber?: string;
+  airlineName?: string;
   deleted?: boolean;
 };
 
@@ -44,6 +46,8 @@ export type Trip = {
   departure: DateTime;
   arrival: DateTime;
   comment?: string;
+  flightNumber?: string;
+  airlineName?: string;
   deleted?: boolean;
 };
 

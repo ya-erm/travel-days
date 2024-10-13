@@ -4,6 +4,7 @@
   import type { DateTime, TripPoint } from '$lib/data/trips';
   import Icon from '$lib/ui/Icon.svelte';
   import { getTimeZoneOffset } from '$lib/utils';
+  import { formatDate } from '$lib/utils/formatDate';
 
   export let point: TripPoint;
   export let timestamp: DateTime;
@@ -29,8 +30,7 @@
 
   const timeZone = timestamp.timeZone;
 
-  $: date = dayjs(timestamp.dateTime).tz(timeZone).format('DD MMMM, dd');
-  $: time = dayjs(timestamp.dateTime).tz(timeZone).format('HH:mm');
+  $: date = dayjs(timestamp.dateTime).tz(timeZone);
   $: timeZoneShift = timeZone ? getTimeZoneOffset(timeZone) : null;
 </script>
 
@@ -51,11 +51,11 @@
     <span class="text-ellipsis-block no-wrap">{text}</span>
   </div>
   <div class="flex gap-0.25">
-    <span>{time}</span>
+    <span>{date.format('HH:mm')}</span>
     <span class="time-shift secondary">(UTC{timeZoneShift})</span>
   </div>
   <div class="flex">
-    <span class="date secondary">{date}</span>
+    <span class="date secondary">{formatDate(date)}</span>
   </div>
 </div>
 
