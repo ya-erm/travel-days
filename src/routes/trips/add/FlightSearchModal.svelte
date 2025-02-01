@@ -1,13 +1,15 @@
 <script lang="ts">
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Input from '@ya-erm/svelte-ui/Input';
+  import Modal from '@ya-erm/svelte-ui/Modal';
+  import { showErrorToast } from '@ya-erm/svelte-ui/ui/toasts/toasts';
+
   import { airports } from '$lib/data/airports';
   import type { TripPoint } from '$lib/data/trips';
   import type { GetFlightsByNumberRequest, GetJournalResponse } from '$lib/server/api/flights/getFlightsByNumber';
   import { translate } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
-  import Input from '$lib/ui/Input.svelte';
-  import Modal from '$lib/ui/Modal.svelte';
-  import { showErrorToast } from '$lib/ui/toasts/toasts';
   import { useFetch } from '$lib/utils';
+
   import { mapFlightTime } from './mapFlightTime';
 
   export let opened: boolean;
@@ -100,7 +102,7 @@
     <Input required label={$translate('trips.add.flight_number')} bind:value={flightNumber} />
     <Input label={$translate('trips.add.flight_date')} bind:value={flightDate} type="date" />
     <div class="grid-col-2 gap-1">
-      <Button text={$translate('common.cancel')} color="secondary" on:click={() => (opened = false)} />
+      <Button text={$translate('common.cancel')} color="secondary" onClick={() => (opened = false)} />
       <Button text={$translate('common.search')} type="submit" />
     </div>
   </form>

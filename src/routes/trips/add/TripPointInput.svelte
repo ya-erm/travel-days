@@ -1,8 +1,9 @@
 <script lang="ts">
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Icon from '@ya-erm/svelte-ui/Icon';
+  import InputLabel from '@ya-erm/svelte-ui/InputLabel';
+
   import type { TripPoint } from '$lib/data/trips';
-  import Button from '$lib/ui/Button.svelte';
-  import Icon from '$lib/ui/Icon.svelte';
-  import InputLabel from '$lib/ui/InputLabel.svelte';
 
   export let label: string | null = null;
   export let value: TripPoint | null = null;
@@ -28,7 +29,7 @@
   {#if label}
     <InputLabel text={label} />
   {/if}
-  <Button color="white" bordered on:click={onClick}>
+  <Button color="white" bordered {onClick}>
     <div class="w-full flex items-center gap-0.5">
       <div class="flex-center icon">
         {#if icon}

@@ -1,9 +1,10 @@
 <script lang="ts">
   import { type ComponentProps } from 'svelte';
 
+  import MultiSwitch from '@ya-erm/svelte-ui/MultiSwitch';
+
   import type { TripType } from '$lib/data/trips';
   import { translate } from '$lib/translate';
-  import MultiSwitch from '$lib/ui/MultiSwitch.svelte';
 
   export let value: TripType;
 

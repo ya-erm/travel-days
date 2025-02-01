@@ -5,7 +5,7 @@ import type {
   PostManyJournalResponseData,
 } from '$lib/server/api/journal';
 import { store } from '$lib/store';
-import { showErrorToast } from '$lib/ui/toasts';
+import { showErrorToast } from '@ya-erm/svelte-ui/toasts';
 import { useFetch } from '$lib/utils';
 import { Logger } from '$lib/utils/logger';
 

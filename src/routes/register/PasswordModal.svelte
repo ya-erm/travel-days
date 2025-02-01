@@ -1,16 +1,18 @@
 <script lang="ts">
+  import { v4 as uuid } from 'uuid';
   import { goto } from '$app/navigation';
+
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Input from '@ya-erm/svelte-ui/Input';
+  import Modal from '@ya-erm/svelte-ui/Modal';
+  import { showErrorToast, showSuccessToast } from '@ya-erm/svelte-ui/toasts';
+
   import { createKeyFromPassword, encryptAes, generateRsaKeys } from '$lib/utils/crypto';
   import { route } from '$lib/routes';
   import type { RegisterRequestData, RegisterResponseData } from '$lib/server/api/auth';
   import { translate } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
-  import Input from '$lib/ui/Input.svelte';
   import Loader from '$lib/ui/Loader.svelte';
-  import Modal from '$lib/ui/Modal.svelte';
-  import { showErrorToast, showSuccessToast } from '$lib/ui/toasts';
   import { useFetch } from '$lib/utils/useFetch';
-  import { v4 as uuid } from 'uuid';
 
   export let login: string;
   export let opened = false;

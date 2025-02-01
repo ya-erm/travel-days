@@ -1,11 +1,12 @@
 <script lang="ts">
+  import Button from '@ya-erm/svelte-ui/Button';
+  import InputList from '@ya-erm/svelte-ui/InputList';
+
   import { airports } from '$lib/data/airports';
   import { cities } from '$lib/data/cities';
   import { countries } from '$lib/data/countries';
   import type { TripPoint } from '$lib/data/trips';
   import { translate } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
-  import InputList from '$lib/ui/InputList.svelte';
 
   export let point: TripPoint | null = null;
   export let withoutAirport: boolean = false;

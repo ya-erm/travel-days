@@ -4,7 +4,7 @@
 
   import { routes } from '$lib/routes';
   import { translate } from '$lib/translate';
-  import Icon from '$lib/ui/Icon.svelte';
+  import Icon from '@ya-erm/svelte-ui/Icon';
   import { backLink } from '$lib/ui/header/model';
 
   import { menu } from './menu';

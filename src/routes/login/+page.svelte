@@ -2,6 +2,9 @@
   import { goto } from '$app/navigation';
   import { derived } from 'svelte/store';
 
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Input from '@ya-erm/svelte-ui/Input';
+
   import { ApiError, isApiError } from '$lib/api/ApiError';
   import { journalService } from '$lib/data/journal';
   import { mainService } from '$lib/data/main';
@@ -14,11 +17,9 @@
   } from '$lib/server/api/auth';
   import { translate } from '$lib/translate';
   import LanguageButton from '$lib/translate/LanguageButton.svelte';
-  import Button from '$lib/ui/Button.svelte';
-  import Input from '$lib/ui/Input.svelte';
   import Loader from '$lib/ui/Loader.svelte';
   import { useRightButton, useTitle } from '$lib/ui/header';
-  import { showErrorToast } from '$lib/ui/toasts';
+  import { showErrorToast } from '@ya-erm/svelte-ui/toasts';
   import { useFetch, useSmartLoading } from '$lib/utils';
   import { createKeyFromPassword, decryptAes, decryptRsa } from '$lib/utils/crypto';
 

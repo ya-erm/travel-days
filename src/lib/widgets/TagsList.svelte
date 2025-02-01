@@ -1,9 +1,10 @@
 <script lang="ts">
   import { v4 as uuid } from 'uuid';
 
+  import Tags from '@ya-erm/svelte-ui/Tags';
+  import { showErrorToast } from '@ya-erm/svelte-ui/toasts';
+
   import { translate } from '$lib/translate';
-  import Tags from '$lib/ui/Tags.svelte';
-  import { showErrorToast } from '$lib/ui/toasts';
 
   type Tag = { id: string; name: string };
 

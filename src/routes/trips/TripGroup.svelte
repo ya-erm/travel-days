@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Trip } from '$lib/data/trips';
+
   import TripListItem from './TripListItem.svelte';
 
   export let trips: Trip[];

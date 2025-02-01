@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Icon from '../Icon.svelte';
+  import Icon from '@ya-erm/svelte-ui/Icon';
+
   import ListGroupItem from './ListGroupItem.svelte';
 
   export let value: string;

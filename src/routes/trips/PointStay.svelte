@@ -1,9 +1,10 @@
 <script lang="ts">
   import dayjs from 'dayjs';
 
+  import Icon from '@ya-erm/svelte-ui/Icon';
+
   import type { TripPoint } from '$lib/data/trips';
   import { translate } from '$lib/translate';
-  import Icon from '$lib/ui/Icon.svelte';
   import { formatDate } from '$lib/utils/formatDate';
 
   export let point: TripPoint;
@@ -43,14 +44,14 @@
       />
     {/if}
   </div>
-  <div class="line" />
+  <div class="line"></div>
   <div class="flex-grow flex-col">
     <div class="title">{`${point.city.name}, ${point.country.name}`}</div>
     {#if dates}
       <div class="date secondary">{dates}</div>
     {/if}
   </div>
-  <div class="line" />
+  <div class="line"></div>
   {#if days}
     <div class="flex-col items-center">
       <div>{days}</div>

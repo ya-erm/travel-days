@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Icon from '$lib/ui/Icon.svelte';
-  import Button from '$lib/ui/Button.svelte';
+  import Icon from '@ya-erm/svelte-ui/Icon';
+  import Button from '@ya-erm/svelte-ui/Button';
 
   export let icon: string | null = null;
   export let text: string | null = null;
@@ -9,7 +9,7 @@
 </script>
 
 <li class="w-full flex-col">
-  <Button appearance="transparent" align="left" on:click={onClick} {role}>
+  <Button appearance="transparent" align="left" {onClick} {role}>
     <div class="flex items-center gap-0.5 text-ellipsis">
       <div class="icon flex-center">
         {#if icon}

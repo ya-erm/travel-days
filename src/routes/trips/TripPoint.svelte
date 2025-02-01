@@ -1,8 +1,9 @@
 <script lang="ts">
   import dayjs from 'dayjs';
 
+  import Icon from '@ya-erm/svelte-ui/Icon';
+
   import type { DateTime, TripPoint } from '$lib/data/trips';
-  import Icon from '$lib/ui/Icon.svelte';
   import { getTimeZoneOffset } from '$lib/utils';
   import { formatDate } from '$lib/utils/formatDate';
 

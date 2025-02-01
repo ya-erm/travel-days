@@ -1,12 +1,13 @@
 <script lang="ts">
   import dayjs from 'dayjs';
 
+  import Icon from '@ya-erm/svelte-ui/Icon';
+  import Spoiler from '@ya-erm/svelte-ui/Spoiler';
+  import SpoilerToggle from '@ya-erm/svelte-ui/SpoilerToggle';
+  import ButtonBase from '@ya-erm/svelte-ui/ButtonBase';
+
   import type { Trip } from '$lib/data/trips';
   import { translate } from '$lib/translate';
-  import ButtonBase from '$lib/ui/ButtonBase.svelte';
-  import Icon from '$lib/ui/Icon.svelte';
-  import Spoiler from '$lib/ui/Spoiler.svelte';
-  import SpoilerToggle from '$lib/ui/SpoilerToggle.svelte';
   import { formatDuration } from '$lib/utils/formatDate';
 
   import TripPoint from './TripPoint.svelte';
@@ -45,7 +46,7 @@
     </div>
   </SpoilerToggle>
   <Spoiler {hidden}>
-    <ButtonBase on:click={onClick}>
+    <ButtonBase {onClick}>
       <div class="w-full flex-col">
         <div class="container w-full gap-0.25 items-start">
           <div class="relative h-full">

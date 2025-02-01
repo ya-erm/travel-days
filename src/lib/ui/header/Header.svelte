@@ -2,9 +2,10 @@
   import { page } from '$app/stores';
   import { derived } from 'svelte/store';
 
+  import Icon from '@ya-erm/svelte-ui/Icon';
+
   import { findRoute } from '$lib/routes';
   import { translate } from '$lib/translate';
-  import Icon from '$lib/ui/Icon.svelte';
 
   import HeaderBackButton from './HeaderBackButton.svelte';
   import SyncState from './SyncState.svelte';

@@ -1,9 +1,10 @@
 <script lang="ts">
+  import Button from '@ya-erm/svelte-ui/Button';
+  import ButtonBase from '@ya-erm/svelte-ui/ButtonBase';
+  import Icon from '@ya-erm/svelte-ui/Icon';
+  import Modal from '@ya-erm/svelte-ui/Modal';
+
   import { activeLocale, languages, translate, type Locales } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
-  import ButtonBase from '$lib/ui/ButtonBase.svelte';
-  import Icon from '$lib/ui/Icon.svelte';
-  import Modal from '$lib/ui/Modal.svelte';
 
   export let opened: boolean;
 
@@ -35,7 +36,7 @@
   <div class="items flex-col" role="listbox">
     {#each Object.entries(languages) as [locale, language] (locale)}
       {@const selected = $activeLocale === locale}
-      <ButtonBase on:click={() => selectLocale(locale)} role="option" aria-selected={selected}>
+      <ButtonBase onClick={() => selectLocale(locale)} role="option" aria-selected={selected}>
         <div class="option w-full flex justify-between gap-0.5 p-0.5" class:active={selected}>
           <div class="flex gap-0.5">
             <Icon name={language.icon} />
@@ -49,8 +50,8 @@
     {/each}
   </div>
   <div class="grid-col-2 gap-1">
-    <Button text={$translate('common.cancel')} color="secondary" on:click={handleClose} />
-    <Button text={$translate('common.accept')} color="primary" on:click={handleAccept} />
+    <Button text={$translate('common.cancel')} color="secondary" onClick={handleClose} />
+    <Button text={$translate('common.accept')} color="primary" onClick={handleAccept} />
   </div>
 </Modal>
 

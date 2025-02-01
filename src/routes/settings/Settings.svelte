@@ -1,14 +1,15 @@
 <script lang="ts">
   import { version } from '$app/environment';
 
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Icon from '@ya-erm/svelte-ui/Icon';
+  import Portal from '@ya-erm/svelte-ui/Portal';
+
   import { currentUserStore, userService } from '$lib/data/users';
   import { route, routes } from '$lib/routes';
   import { activeLocaleName, translate } from '$lib/translate';
   import LanguageModal from '$lib/translate/LanguageModal.svelte';
-  import Button from '$lib/ui/Button.svelte';
-  import Icon from '$lib/ui/Icon.svelte';
   import Loader from '$lib/ui/Loader.svelte';
-  import Portal from '$lib/ui/Portal.svelte';
   import ListGroup from '$lib/ui/list-group/ListGroup.svelte';
   import ListLinkItem from '$lib/ui/list-group/ListLinkItem.svelte';
   import ListSelectItem from '$lib/ui/list-group/ListSelectItem.svelte';
@@ -61,7 +62,7 @@
       color="danger"
       appearance="link"
       underlined={false}
-      on:click={logout}
+      onClick={logout}
       text={$translate('settings.profile.logout')}
     />
   {/if}

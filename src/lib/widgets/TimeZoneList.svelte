@@ -2,10 +2,11 @@
   import dayjs from 'dayjs';
   import { getTimeZones } from '@vvo/tzdb';
 
+  import Input from '@ya-erm/svelte-ui/Input';
+  import { showSuccessToast } from '@ya-erm/svelte-ui/ui/toasts/toasts';
+
   import { translate } from '$lib/translate';
-  import Input from '$lib/ui/Input.svelte';
   import ListGroup from '$lib/ui/list-group/ListGroup.svelte';
-  import { showSuccessToast } from '$lib/ui/toasts';
 
   import TimeZoneListItem from './TimeZoneListItem.svelte';
 

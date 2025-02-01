@@ -3,20 +3,21 @@
   import { type ComponentProps } from 'svelte';
   import { v4 as uuid } from 'uuid';
 
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Checkbox from '@ya-erm/svelte-ui/Checkbox';
+  import Input from '@ya-erm/svelte-ui/Input';
+  import InputLabel from '@ya-erm/svelte-ui/InputLabel';
+  import Portal from '@ya-erm/svelte-ui/Portal';
+  import TextArea from '@ya-erm/svelte-ui/TextArea';
+  import { showErrorToast } from '@ya-erm/svelte-ui/toasts';
+
   import type { Trip, TripDBO, TripPoint, TripType } from '$lib/data/trips';
   import { translate } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
-  import Checkbox from '$lib/ui/Checkbox.svelte';
   import DateTimeInput from '$lib/ui/DateTimeInput.svelte';
   import Layout from '$lib/ui/Layout.svelte';
-  import Portal from '$lib/ui/Portal.svelte';
-  import TextArea from '$lib/ui/TextArea.svelte';
-  import { showErrorToast } from '$lib/ui/toasts';
   import { deleteSearchParam, getSearchParam, setSearchParam } from '$lib/utils';
-
-  import Input from '$lib/ui/Input.svelte';
-  import InputLabel from '$lib/ui/InputLabel.svelte';
   import createBooleanStore from '$lib/utils/createBooleanStore';
+
   import FlightSearchModal from './FlightSearchModal.svelte';
   import TripPointForm from './TripPointForm.svelte';
   import TripPointInput from './TripPointInput.svelte';
@@ -124,7 +125,7 @@
           appearance="link"
           underlined={false}
           text={$translate('trips.add.flight_number.search')}
-          on:click={openFlightSearch}
+          onClick={openFlightSearch}
         />
       </div>
       <Input bind:value={flightNumber} endText={airlineName} />

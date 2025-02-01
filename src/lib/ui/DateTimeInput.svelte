@@ -1,12 +1,13 @@
 <script lang="ts">
   import dayjs from 'dayjs';
 
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Input from '@ya-erm/svelte-ui/Input';
+  import InputLabel from '@ya-erm/svelte-ui/InputLabel';
+  import Portal from '@ya-erm/svelte-ui/Portal';
+
   import { translate } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
-  import Input from '$lib/ui/Input.svelte';
-  import InputLabel from '$lib/ui/InputLabel.svelte';
   import Layout from '$lib/ui/Layout.svelte';
-  import Portal from '$lib/ui/Portal.svelte';
   import { getTimeZoneOffset } from '$lib/utils/getTimeZoneOffset';
   import TimeZoneList from '$lib/widgets/TimeZoneList.svelte';
 
@@ -45,7 +46,7 @@
     <span class="flex-shrink-0">
       <InputLabel text={label ?? $translate('common.date_and_time')} />
     </span>
-    <Button appearance="link" underlined={false} on:click={() => (timeZoneListVisible = true)}>
+    <Button appearance="link" underlined={false} onClick={() => (timeZoneListVisible = true)}>
       {#if timeZone}
         <div class="w-full flex gap-0.25">
           <span class="time-zone text-ellipsis-block">{timeZone}</span>

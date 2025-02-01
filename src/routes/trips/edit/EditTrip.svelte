@@ -1,7 +1,8 @@
 <script lang="ts">
+  import Button from '@ya-erm/svelte-ui/Button';
+
   import { tripsService, tripsStore, type TripDBO } from '$lib/data/trips';
   import { translate } from '$lib/translate';
-  import Button from '$lib/ui/Button.svelte';
 
   import TripForm from '../add/TripForm.svelte';
 
@@ -28,7 +29,7 @@
 <TripForm {trip} onSubmit={handleSubmit}>
   <Button
     slot="footer"
-    on:click={handleDelete}
+    onClick={handleDelete}
     text={$translate('trips.edit.delete_trip')}
     testId="DeleteTripButton"
     appearance="transparent"

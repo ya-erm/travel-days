@@ -1,10 +1,11 @@
 <script lang="ts">
   import { page } from '$app/stores';
 
+  import Portal from '@ya-erm/svelte-ui/Portal';
+
   import { tripsStore, type Trip } from '$lib/data/trips';
   import { translate } from '$lib/translate';
   import Layout from '$lib/ui/Layout.svelte';
-  import Portal from '$lib/ui/Portal.svelte';
   import { getSearchParam, setSearchParam } from '$lib/utils';
   import HeaderFormSubmitButton from '$lib/ui/header/HeaderFormSubmitButton.svelte';
 
