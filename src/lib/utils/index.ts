@@ -10,7 +10,6 @@ export {
   checkStringParameter,
   type CheckParameterOptions,
 } from './checkParameter';
-export { checkUserAndGroup, checkUserId } from './checkUser';
 export { deepEqual } from './deepEqual';
 export { filterNotEmpty } from './filterNotEmpty';
 export { deleteSearchParam, getNumberSearchParam, getSearchParam, setSearchParam } from './getSearchParam';

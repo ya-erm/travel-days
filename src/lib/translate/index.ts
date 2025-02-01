@@ -26,7 +26,8 @@ type FormatOptions = {
   default?: string;
   values?: Record<string, string | number | boolean | Date | null | undefined> | undefined;
 };
-type MessageFormatter = (id: Messages, options?: FormatOptions) => string;
+
+export type MessageFormatter = (id: Messages, options?: FormatOptions) => string;
 
 export const translate = format as Readable<MessageFormatter>;
 

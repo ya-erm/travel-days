@@ -2,8 +2,13 @@
   import { goto } from '$app/navigation';
   import { derived } from 'svelte/store';
 
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Input from '@ya-erm/svelte-ui/Input';
+
   import { ApiError, isApiError } from '$lib/api/ApiError';
-  import { createKeyFromPassword, decryptAes, decryptRsa } from '$lib/utils/crypto';
+  import { journalService } from '$lib/data/journal';
+  import { mainService } from '$lib/data/main';
+  import { userService } from '$lib/data/users';
   import type {
     LoginConfirmRequestData,
     LoginConfirmResponseData,
@@ -12,12 +17,11 @@
   } from '$lib/server/api/auth';
   import { translate } from '$lib/translate';
   import LanguageButton from '$lib/translate/LanguageButton.svelte';
-  import Button from '$lib/ui/Button.svelte';
-  import Input from '$lib/ui/Input.svelte';
   import Loader from '$lib/ui/Loader.svelte';
   import { useRightButton, useTitle } from '$lib/ui/header';
-  import { showErrorToast } from '$lib/ui/toasts';
+  import { showErrorToast } from '@ya-erm/svelte-ui/toasts';
   import { useFetch, useSmartLoading } from '$lib/utils';
+  import { createKeyFromPassword, decryptAes, decryptRsa } from '$lib/utils/crypto';
 
   useTitle($translate('auth.login.title'));
   useRightButton(LanguageButton);
@@ -82,26 +86,22 @@
       }
       const encryptedKey = JSON.parse(user.encryptedKey);
       const decryptedKey = await decryptKey(encryptedKey);
-      // Save member to local DB
-      // TODO:
-      // await membersService.save({
-      //   login,
-      //   uuid: user.uuid,
-      //   publicKey: user.publicKey,
-      //   privateKey: decryptedKey,
-      // });
-      // Save as default member
-      // void settingsService.updateSettings({ selectedMember: user.uuid });
-
       const privateKey: JsonWebKey = JSON.parse(decryptedKey);
       const decryptedToken = await decryptRsa(privateKey, encryptedToken.base64Data);
       await loginConfirmFetcher.fetch({ token: decryptedToken, uuid: user.uuid });
+      // Save user to local DB
+      await userService.save({
+        uuid: user.uuid,
+        login: user.login,
+        publicKey: user.publicKey,
+        privateKey: decryptedKey,
+      });
+      // Set as current user
+      await userService.setCurrentUser(user);
       // Initialize main service asynchronously
-      // TODO:
-      // await mainService.initServices();
+      await mainService.initServices();
       // Fetch updates from server
-      // TODO:
-      // void journalService.syncWithServer();
+      void journalService.syncWithServer();
       // Go to default route
       await goto('/');
     } catch (e) {

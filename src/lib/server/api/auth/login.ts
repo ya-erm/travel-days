@@ -31,7 +31,15 @@ export async function login(data: LoginRequestData) {
   const publicKey = JSON.parse(user.publicKey) as JsonWebKey;
   const encryptedToken = await encryptRsa(publicKey, token.value);
 
-  return { user, encryptedToken };
+  return {
+    user: {
+      uuid: user.uuid,
+      login: user.email,
+      encryptedKey: user.encryptedKey,
+      publicKey: user.publicKey,
+    },
+    encryptedToken,
+  };
 }
 
 export type LoginResponseData = Awaited<ReturnType<typeof login>>;

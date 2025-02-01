@@ -6,11 +6,11 @@ export const handle: Handle = async ({ event, resolve }) => {
   try {
     const session = event.cookies.get('session');
     if (session) {
-      const token = await db.memberToken.findFirst({
+      const token = await db.accessToken.findFirst({
         where: { value: session },
       });
       if (token && !token.invalidated) {
-        event.locals.uuid = token.memberUuid;
+        event.locals.uuid = token.userId;
       }
     }
   } catch (e) {

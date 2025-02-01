@@ -1,0 +1,772 @@
+[
+  {
+    "code": "DMS",
+    "name": "SABTCO Bus Station",
+    "city_code": "DMM",
+    "country_code": "SA",
+    "time_zone": "Asia/Riyadh",
+    "coordinates": {
+      "lat": 24.476809,
+      "lon": 39.61572
+    }
+  },
+  {
+    "code": "DRX",
+    "name": "Dresden Bus Station",
+    "city_code": "DRS",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 51.13,
+      "lon": 13.77
+    }
+  },
+  {
+    "code": "FSA",
+    "name": "CZ Bus Station",
+    "city_code": "FUO",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 23.021547,
+      "lon": 113.121414
+    }
+  },
+  {
+    "code": "HBZ",
+    "name": "Hannover Bus Station",
+    "city_code": "HAJ",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 35.61689,
+      "lon": -92.13008
+    }
+  },
+  {
+    "code": "HNZ",
+    "name": "CZ Bus Station",
+    "city_code": "SZX",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 36.46561,
+      "lon": -78.64167
+    }
+  },
+  {
+    "code": "KYY",
+    "name": "Karamay Bus Station",
+    "city_code": "KRY",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 45.579887,
+      "lon": 84.889206
+    }
+  },
+  {
+    "code": "LMJ",
+    "name": "Tokyo Bus Station",
+    "city_code": "TYO",
+    "country_code": "JP",
+    "time_zone": "Asia/Tokyo",
+    "coordinates": {
+      "lat": 35.689487,
+      "lon": 139.69171
+    }
+  },
+  {
+    "code": "OBZ",
+    "name": "Hamburg Bus Station",
+    "city_code": "HAM",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 53.553814,
+      "lon": 9.991586
+    }
+  },
+  {
+    "code": "PFL",
+    "name": "Florenc Bus Station",
+    "city_code": "PRG",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 50.08781,
+      "lon": 14.42046
+    }
+  },
+  {
+    "code": "PVB",
+    "name": "Punta Del Este Bus Station",
+    "city_code": "PDP",
+    "country_code": "UY",
+    "time_zone": "America/Montevideo",
+    "coordinates": {
+      "lat": 42.743557,
+      "lon": -90.543915
+    }
+  },
+  {
+    "code": "QBF",
+    "name": "Vail Bus Station",
+    "city_code": "EGE",
+    "country_code": "US",
+    "time_zone": "America/Denver",
+    "coordinates": {
+      "lat": 39.640263,
+      "lon": -106.3742
+    }
+  },
+  {
+    "code": "QDK",
+    "name": "Greyhound Bus Station",
+    "city_code": "CHA",
+    "country_code": "US",
+    "time_zone": "America/New_York",
+    "coordinates": {
+      "lat": 30.055555,
+      "lon": 70.50278
+    }
+  },
+  {
+    "code": "QOF",
+    "name": "Darnitsa Bus Station",
+    "city_code": "IEV",
+    "country_code": "UA",
+    "time_zone": "Europe/Kiev",
+    "coordinates": {
+      "lat": 50.431118,
+      "lon": 30.644321
+    }
+  },
+  {
+    "code": "QOH",
+    "name": "Hotel Rus Bus Station",
+    "city_code": "IEV",
+    "country_code": "UA",
+    "time_zone": "Europe/Kiev",
+    "coordinates": {
+      "lat": 50.4333,
+      "lon": 30.5167
+    }
+  },
+  {
+    "code": "QWM",
+    "name": "Longmont Bus Station",
+    "city_code": "DEN",
+    "country_code": "US",
+    "time_zone": "America/Denver",
+    "coordinates": {
+      "lat": 39.739155,
+      "lon": -104.9847
+    }
+  },
+  {
+    "code": "QXG",
+    "name": "Angers Railway Station",
+    "city_code": "ANE",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 47.47842,
+      "lon": -0.563166
+    }
+  },
+  {
+    "code": "QZD",
+    "name": "Szeged",
+    "city_code": "QZD",
+    "country_code": "HU",
+    "time_zone": "Europe/Budapest",
+    "coordinates": {
+      "lat": 46.2537,
+      "lon": 20.146029
+    }
+  },
+  {
+    "code": "TJJ",
+    "name": "Tianjin Bus Station",
+    "city_code": "TSN",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 39.08416,
+      "lon": 117.20098
+    }
+  },
+  {
+    "code": "VDT",
+    "name": "Montevideo Bus Station",
+    "city_code": "MVD",
+    "country_code": "UY",
+    "time_zone": "America/Montevideo",
+    "coordinates": {
+      "lat": -34.88361,
+      "lon": -56.181946
+    }
+  },
+  {
+    "code": "XAA",
+    "name": "Yerevan Stadium",
+    "city_code": "EVN",
+    "country_code": "AM",
+    "time_zone": "Asia/Yerevan",
+    "coordinates": {
+      "lat": 40.17621,
+      "lon": 44.50114
+    }
+  },
+  {
+    "code": "XER",
+    "name": "Strasbourg Bus Service",
+    "city_code": "SXB",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.54,
+      "lon": 7.64
+    }
+  },
+  {
+    "code": "XET",
+    "name": "Karlsruhe Bus Station",
+    "city_code": "FKB",
+    "country_code": "DE",
+    "time_zone": "Europe/Berlin",
+    "coordinates": {
+      "lat": 49.008083,
+      "lon": 8.403756
+    }
+  },
+  {
+    "code": "XEU",
+    "name": "Hyatt Rgncy EY Bus Station",
+    "city_code": "DXB",
+    "country_code": "AE",
+    "time_zone": "Asia/Dubai",
+    "coordinates": {
+      "lat": 25.264444,
+      "lon": 55.31167
+    }
+  },
+  {
+    "code": "XEX",
+    "name": "Aerogare",
+    "city_code": "PAR",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.833332,
+      "lon": 2.65
+    }
+  },
+  {
+    "code": "XGB",
+    "name": "Gare Montparnasse",
+    "city_code": "PAR",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 49.016666,
+      "lon": 2.565278
+    }
+  },
+  {
+    "code": "XGE",
+    "name": "Ottawa Bus Station",
+    "city_code": "YOW",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 45.41157,
+      "lon": -75.6982
+    }
+  },
+  {
+    "code": "XHG",
+    "name": "Ottawa Bus Station",
+    "city_code": "YOW",
+    "country_code": "CA",
+    "time_zone": "America/Toronto",
+    "coordinates": {
+      "lat": 45.41157,
+      "lon": -75.6982
+    }
+  },
+  {
+    "code": "XHQ",
+    "name": "Hopa Bus Station",
+    "city_code": "XHQ",
+    "country_code": "TR",
+    "time_zone": "Europe/Istanbul",
+    "coordinates": {
+      "lat": 41.39011,
+      "lon": 41.41708
+    }
+  },
+  {
+    "code": "XJB",
+    "name": "Barcelona Bus Station",
+    "city_code": "BCN",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.387917,
+      "lon": 2.1699188
+    }
+  },
+  {
+    "code": "XJF",
+    "name": "Falun Bus Station",
+    "city_code": "BLE",
+    "country_code": "SE",
+    "time_zone": "Europe/Stockholm",
+    "coordinates": {
+      "lat": 60.485603,
+      "lon": 15.436301
+    }
+  },
+  {
+    "code": "XJJ",
+    "name": "Albacete Bus Station",
+    "city_code": "ABC",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 38.99765,
+      "lon": -1.8600701
+    }
+  },
+  {
+    "code": "XJK",
+    "name": "Klaipeda Bus Station",
+    "city_code": "PLQ",
+    "country_code": "LT",
+    "time_zone": "Europe/Vilnius",
+    "coordinates": {
+      "lat": 55.710804,
+      "lon": 21.131807
+    }
+  },
+  {
+    "code": "XJN",
+    "name": "Valladolid Bus Station",
+    "city_code": "VLL",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.652943,
+      "lon": -4.728381
+    }
+  },
+  {
+    "code": "XJO",
+    "name": "Soria Bus Station",
+    "city_code": "XJO",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 41.76707,
+      "lon": -2.4793088
+    }
+  },
+  {
+    "code": "XJR",
+    "name": "Lorca Bus Station",
+    "city_code": "XJR",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 40.472237,
+      "lon": -4.080234
+    }
+  },
+  {
+    "code": "XJU",
+    "name": "Burgos Bus Station",
+    "city_code": "RGS",
+    "country_code": "ES",
+    "time_zone": "Europe/Madrid",
+    "coordinates": {
+      "lat": 42.34083,
+      "lon": -3.69972
+    }
+  },
+  {
+    "code": "XMB",
+    "name": "Marina Mall EY Bus Station",
+    "city_code": "DXB",
+    "country_code": "AE",
+    "time_zone": "Asia/Dubai",
+    "coordinates": {
+      "lat": 7.45,
+      "lon": -4.333333
+    }
+  },
+  {
+    "code": "XNB",
+    "name": "Chelsea Twr EY Bus Station",
+    "city_code": "DXB",
+    "country_code": "AE",
+    "time_zone": "Asia/Dubai",
+    "coordinates": {
+      "lat": 25.264444,
+      "lon": 55.31167
+    }
+  },
+  {
+    "code": "XTP",
+    "name": "Tampere Bus Station",
+    "city_code": "TMP",
+    "country_code": "FI",
+    "time_zone": "Europe/Helsinki",
+    "coordinates": {
+      "lat": 61.497856,
+      "lon": 23.759632
+    }
+  },
+  {
+    "code": "XTT",
+    "name": "Etoile",
+    "city_code": "PAR",
+    "country_code": "FR",
+    "time_zone": "Europe/Paris",
+    "coordinates": {
+      "lat": 48.856613,
+      "lon": 2.352222
+    }
+  },
+  {
+    "code": "XUN",
+    "name": "Hailey Bus Station",
+    "city_code": "SUN",
+    "country_code": "US",
+    "time_zone": "America/Boise",
+    "coordinates": {
+      "lat": 43.69713,
+      "lon": -114.351715
+    }
+  },
+  {
+    "code": "ZAY",
+    "name": "De Keyserlei Bus Station",
+    "city_code": "ANR",
+    "country_code": "BE",
+    "time_zone": "Europe/Brussels",
+    "coordinates": {
+      "lat": 51.21992,
+      "lon": 4.39625
+    }
+  },
+  {
+    "code": "ZBC",
+    "name": "Colmore Row Bus Station",
+    "city_code": "BHX",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 42.237392,
+      "lon": 118.91089
+    }
+  },
+  {
+    "code": "ZBU",
+    "name": "Aarhus Limo",
+    "city_code": "AAR",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 56.162937,
+      "lon": 10.203921
+    }
+  },
+  {
+    "code": "ZBV",
+    "name": "Beaver Creek Bus Station",
+    "city_code": "EGE",
+    "country_code": "US",
+    "time_zone": "America/Denver",
+    "coordinates": {
+      "lat": 39.640263,
+      "lon": -106.3742
+    }
+  },
+  {
+    "code": "ZDN",
+    "name": "Brno Bus Station",
+    "city_code": "BRQ",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 49.2,
+      "lon": 16.61
+    }
+  },
+  {
+    "code": "ZFC",
+    "name": "Bradford Bus Station",
+    "city_code": "LBA",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 53.837128,
+      "lon": -1.4722292
+    }
+  },
+  {
+    "code": "ZFG",
+    "name": "Sheffield Bus Station",
+    "city_code": "DSA",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 53.52304,
+      "lon": -1.1337622
+    }
+  },
+  {
+    "code": "ZFX",
+    "name": "Szczecin Bus Station",
+    "city_code": "SZZ",
+    "country_code": "PL",
+    "time_zone": "Europe/Warsaw",
+    "coordinates": {
+      "lat": 53.428543,
+      "lon": 14.552812
+    }
+  },
+  {
+    "code": "ZFY",
+    "name": "Katowice Bus Station",
+    "city_code": "KTW",
+    "country_code": "PL",
+    "time_zone": "Europe/Warsaw",
+    "coordinates": {
+      "lat": 50.264893,
+      "lon": 19.02378
+    }
+  },
+  {
+    "code": "ZGB",
+    "name": "Nottingham Bus Station",
+    "city_code": "NQT",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 21.540333,
+      "lon": 109.28785
+    }
+  },
+  {
+    "code": "ZID",
+    "name": "Aarhus Bus Station",
+    "city_code": "AAR",
+    "country_code": "DK",
+    "time_zone": "Europe/Copenhagen",
+    "coordinates": {
+      "lat": 56.162937,
+      "lon": 10.203921
+    }
+  },
+  {
+    "code": "ZIK",
+    "name": "Karlovy Vary Bus Station",
+    "city_code": "KLV",
+    "country_code": "CZ",
+    "time_zone": "Europe/Prague",
+    "coordinates": {
+      "lat": 50.232204,
+      "lon": 12.871277
+    }
+  },
+  {
+    "code": "ZIU",
+    "name": "Railway",
+    "city_code": "ZUH",
+    "country_code": "CN",
+    "time_zone": "Asia/Shanghai",
+    "coordinates": {
+      "lat": 22.270716,
+      "lon": 113.57673
+    }
+  },
+  {
+    "code": "ZJO",
+    "name": "San Jose Bus Station",
+    "city_code": "SJC",
+    "country_code": "US",
+    "time_zone": "America/Los_Angeles",
+    "coordinates": {
+      "lat": 37.339386,
+      "lon": -121.89496
+    }
+  },
+  {
+    "code": "ZLZ",
+    "name": "Leeds Bus Station",
+    "city_code": "LBA",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 37.568935,
+      "lon": 105.15253
+    }
+  },
+  {
+    "code": "ZMP",
+    "name": "Manchester Bus Station",
+    "city_code": "MAN",
+    "country_code": "GB",
+    "time_zone": "Europe/London",
+    "coordinates": {
+      "lat": 53.480713,
+      "lon": -2.2343764
+    }
+  },
+  {
+    "code": "ZRG",
+    "name": "Bratislava Bus Station",
+    "city_code": "BTS",
+    "country_code": "SK",
+    "time_zone": "Europe/Bratislava",
+    "coordinates": {
+      "lat": 48.17,
+      "lon": 17.21
+    }
+  },
+  {
+    "code": "ZTC",
+    "name": "Turin Bus Station",
+    "city_code": "TRN",
+    "country_code": "IT",
+    "time_zone": "Europe/Rome",
+    "coordinates": {
+      "lat": 45.07056,
+      "lon": 7.686619
+    }
+  },
+  {
+    "code": "ZVH",
+    "name": "EK Bus Station",
+    "city_code": "AAN",
+    "country_code": "AE",
+    "time_zone": "Asia/Dubai",
+    "coordinates": {
+      "lat": 24.2075,
+      "lon": 55.74472
+    }
+  },
+  {
+    "code": "ZVJ",
+    "name": "EK Bus Station",
+    "city_code": "AUH",
+    "country_code": "AE",
+    "time_zone": "Asia/Dubai",
+    "coordinates": {
+      "lat": 24.466667,
+      "lon": 54.366665
+    }
+  },
+  {
+    "code": "ZXZ",
+    "name": "Jumeirah Beach Bus Station",
+    "city_code": "DXB",
+    "country_code": "AE",
+    "time_zone": "Asia/Dubai",
+    "coordinates": {
+      "lat": 25.264444,
+      "lon": 55.31167
+    }
+  },
+  {
+    "code": "ZYD",
+    "name": "Lisbon TP",
+    "city_code": "LIS",
+    "country_code": "PT",
+    "time_zone": "Europe/Lisbon",
+    "coordinates": {
+      "lat": 40.032368,
+      "lon": 124.28081
+    }
+  },
+  {
+    "code": "ZYF",
+    "name": "Faro TP",
+    "city_code": "FAO",
+    "country_code": "PT",
+    "time_zone": "Europe/Lisbon",
+    "coordinates": {
+      "lat": 37.015358,
+      "lon": -7.935113
+    }
+  },
+  {
+    "code": "ZYJ",
+    "name": "Porto TP Bus Station",
+    "city_code": "OPO",
+    "country_code": "PT",
+    "time_zone": "Europe/Lisbon",
+    "coordinates": {
+      "lat": 41.149967,
+      "lon": -8.610243
+    }
+  },
+  {
+    "code": "АХЗ",
+    "name": "Arkhyz Bus Station",
+    "city_code": "АХЗ",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 43.54267,
+      "lon": 41.18124
+    }
+  },
+  {
+    "code": "ДМЙ",
+    "name": "Dombay Bus Station",
+    "city_code": "ДМЙ",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 43.28809,
+      "lon": 41.620445
+    }
+  },
+  {
+    "code": "ЕСН",
+    "name": "Essentuki Bus Station",
+    "city_code": "ЕСН",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 44.03727,
+      "lon": 42.860085
+    }
+  },
+  {
+    "code": "СТЗ",
+    "name": "Bayrampasha Bus Station",
+    "city_code": "IST",
+    "country_code": "TR",
+    "time_zone": "Asia/Istanbul",
+    "coordinates": {
+      "lat": 41.03999,
+      "lon": 28.894627
+    }
+  },
+  {
+    "code": "ЯРЖ",
+    "name": "Yaroslavl Glavniy Bus Station",
+    "city_code": "IAR",
+    "country_code": "RU",
+    "time_zone": "Europe/Moscow",
+    "coordinates": {
+      "lat": 57.62646,
+      "lon": 39.835686
+    }
+  }
+]

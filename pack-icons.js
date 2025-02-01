@@ -35,6 +35,7 @@ const iconsToBundle = [
   'mdi:open-in-new',
   'mdi:pencil',
   'mdi:plus',
+  'mdi:search',
   'mdi:swap-horizontal',
   'mdi:swap-vertical',
   'mdi:translate',

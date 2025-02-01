@@ -1,15 +1,10 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
-  import { inject } from '@vercel/analytics';
-
-  import '$lib/icons';
   import '$lib/translate';
 
-  import Layout from '$lib/ui/Layout.svelte';
-  import ThemeProvider from '$lib/ui/theme/ThemeProvider.svelte';
-  import Toasts from '$lib/ui/toasts/Toasts.svelte';
+  import Toasts from '@ya-erm/svelte-ui/toasts/Toasts';
+  import ThemeProvider from '@ya-erm/svelte-ui/ThemeProvider';
 
-  inject({ mode: dev ? 'development' : 'production', debug: false });
+  import Layout from '$lib/ui/Layout.svelte';
 </script>
 
 <Toasts />

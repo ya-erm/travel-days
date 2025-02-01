@@ -1,31 +1,41 @@
 <script lang="ts">
-  import Icon from '$lib/ui/Icon.svelte';
+  import Button from '@ya-erm/svelte-ui/Button';
+  import Icon from '@ya-erm/svelte-ui/Icon';
+
   import { findRoute } from '$lib/routes';
   import { translate } from '$lib/translate';
-  import Button from '../Button.svelte';
 
   export let href: string | null = null;
   export let onClick: (() => void) | null = null;
   export let title: string | null = null;
+
+  const goBack = () => {
+    history.back();
+  };
 </script>
 
-{#if href}
-  <a {href} on:click={onClick}>
-    <Icon name="mdi:chevron-left" />
-    {title ?? $translate(findRoute(href)?.title ?? 'common.back')}
-  </a>
-{:else}
-  <Button appearance="link" underlined={false} on:click={onClick}>
-    <div class="flex items-center">
+<div class="back-button">
+  {#if href}
+    <a {href} on:click={onClick}>
       <Icon name="mdi:chevron-left" />
-      <span>
-        {title ?? $translate('common.back')}
-      </span>
-    </div>
-  </Button>
-{/if}
+      {title ?? $translate(findRoute(href)?.title ?? 'common.back')}
+    </a>
+  {:else}
+    <Button appearance="transparent" onClick={onClick ?? goBack} aria-label={title ?? $translate('common.back')}>
+      <div class="flex items-center">
+        <Icon name="mdi:chevron-left" />
+        <span>
+          {title ?? $translate('common.back')}
+        </span>
+      </div>
+    </Button>
+  {/if}
+</div>
 
 <style>
+  .back-button {
+    margin-left: -0.5rem;
+  }
   a {
     display: flex;
     align-items: center;
